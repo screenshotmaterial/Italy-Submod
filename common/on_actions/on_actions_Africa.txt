@@ -1,0 +1,156 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			268 = { #Djibouti
+				add_dynamic_modifier = { modifier = MAF_dkaeb_railroad }
+			}
+			920 = { #Amhara
+				add_dynamic_modifier = { modifier = ETH_dkaeb_railroad }
+			}
+			921 = { #Afar
+				add_dynamic_modifier = { modifier = ETH_dkaeb_railroad }
+			}
+			271 = { #Addis Ababa
+				add_dynamic_modifier = { modifier = ETH_dkaeb_railroad }
+			}
+			922 = { #Omo
+				add_dynamic_modifier = { modifier = ETH_dkaeb_railroad }
+			}
+			969 = { #Rift Valley
+				add_dynamic_modifier = { modifier = MAF_dkaeb_railroad }
+			}
+			548 = { #Uganda
+				add_dynamic_modifier = { modifier = MAF_dkaeb_railroad }
+			}
+			977 = { #Kivu
+				add_dynamic_modifier = { modifier = MAF_dkaeb_railroad }
+			}
+			949 = { #Maniema
+				add_dynamic_modifier = { modifier = MAF_dkaeb_railroad }
+			}
+			879 = { #Katanga
+				add_dynamic_modifier = { modifier = MAF_dkaeb_railroad }
+			}
+		}
+	}
+	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					tag = MAF
+					FROM = { tag = KEN }
+				}
+				country_event = {
+					id = mittel.132
+					days = 1
+				}
+			}
+
+			if = {
+				limit = { FROM = { tag = ADA } }
+				ADA = {
+					remove_state_core = 927
+					remove_state_core = 952
+					remove_state_core = 962
+					remove_state_core = 971
+				}
+				CMR = {
+					if = {
+						limit = { owns_state = 952 }
+						country_event = mittel.2503
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					tag = ADA
+					FROM = { tag = CMR }
+				}
+				add_state_core = 927
+				add_state_core = 962
+				set_cosmetic_tag = CMR
+
+				country_event = mittel.2503
+			}
+
+			if = {
+				limit = { FROM = { tag = KIV } }
+				every_owned_state = {
+					limit = { is_core_of = KIV }
+					remove_core_of = KIV
+				}
+			}
+
+			if = {
+				limit = { FROM = { tag = HAU } }
+				HAU = { remove_state_core = 878 }
+			}
+
+			if = {
+				limit = { FROM = { tag = KBR } }
+				KBR = {
+					remove_state_core = 913
+					remove_state_core = 962
+				}
+				var:952.owner = { country_event = mittel.2503 }
+			}
+
+			if = {
+				limit = { FROM = { tag = RWA } }
+				RWA = { remove_state_core = 869 }
+			}
+
+			if = {
+				limit = { FROM = { tag = BRD } }
+				BRD = { remove_state_core = 870 }
+			}
+
+			if = {
+				limit = {
+					tag = SWA
+					FROM = { tag = NMB }
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
+			if = {
+				limit = {
+					tag = SWA
+					is_neighbor_of = TZN
+					TZN = { has_cosmetic_tag = TZN_GER }
+				}
+				country_event = mittel.2505
+			}
+		}
+	}
+
+	on_new_term_election = {
+		effect = {
+			### Liberia ###
+			if = {
+				limit = { tag = LIB }
+				country_event = lib.3 #1939
+			}
+			### Ethiopia ###
+			if = {
+				limit = { tag = ETH }
+				country_event = ethiopia.21
+			}
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = { #post collapse war Tanganyika Zanzibar- Tanganyika win
+					tag = TZN
+					FROM = { tag = ZZB }
+				}
+				FROM = { country_event = mittel.170 }
+			}
+		}
+	}
+}
+

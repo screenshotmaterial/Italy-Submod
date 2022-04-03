@@ -1,0 +1,573 @@
+##############
+### EUROPE ###
+##############
+
+default_area_priority_base = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -70
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = -70
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = -70
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -70
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = -70
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = -70
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = -70
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = -70
+	}
+}
+
+default_area_priority_europe = {
+	allowed = {
+		is_normal_european_focused_tag = yes
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 170 #from -70 to 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 80 #from -70 to 10
+	}
+}
+
+default_area_priority_europe_major = {
+	allowed = {
+		is_normal_european_focused_tag = yes
+	}
+	enable = {
+		is_major = yes
+	}
+	abort = {
+		is_major = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 50 #from 10 to 60
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 30 #from 10 to 40
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 80 #from -70 to 10
+	}
+}
+
+default_area_priority_national_france = {
+	allowed = {
+		original_tag = NFA
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 190 #from -70 to 120
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 130 #from -70 to 60
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 110 #from -70 to 40
+	}
+}
+
+default_area_priority_russia = {
+	allowed = {
+		is_russian_tag = yes
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 170 #from -70 to 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 130 #from -70 to 60
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 130 #from -70 to 60
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 80 #from -70 to 10
+	}
+}
+
+default_area_priority_turkey = {
+	allowed = {
+		original_tag = TUR
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 145 #from -70 to 75
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 110 #from -70 to 40
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 170 #from -70 to 100
+	}
+}
+
+default_area_priority_portugal = {
+	allowed = {
+		original_tag = POR
+	}
+	enable = {
+		num_occupied_states > 0
+		any_owned_state = { is_in_home_area = no }
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 90 #from -70 to 20
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 90 #from -70 to 20
+	}
+}
+
+############
+### ASIA ###
+############
+
+default_area_priority_asia = {
+	allowed = {
+		is_normal_asian_focused_tag = yes
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 170 #from -70 to 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 80 #from -70 to 10
+	}
+}
+
+default_area_priority_asia_major = {
+	allowed = {
+		is_normal_asian_focused_tag = yes
+	}
+	enable = {
+		is_major = yes
+	}
+	abort = {
+		is_major = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 50 #from -70 to -20
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 50 #from -70 to -20
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 60 #from -70 to -10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 15 #from 10 to 25
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 90 #from -70 to 20
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 80 #from -70 to 10
+	}
+}
+
+default_area_priority_japan = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 90 #from -70 to 20
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 100 #from -70 to 30
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 170 #from -70 to 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 100 #from -70 to 30
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 150 #from -70 to 80
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 150 #from -70 to 80
+	}
+}
+
+##############
+### AFRICA ###
+##############
+
+default_area_priority_africa = {
+	allowed = {
+		is_normal_african_focused_tag = yes
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 170 #from -70 to 100
+	}
+}
+
+default_area_priority_egypt = {
+	allowed = {
+		original_tag = EGY
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 50 #from -70 to -20
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 130 #from -70 to 60
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 150 #from -70 to 80
+	}
+}
+
+#####################
+### NORTH AMERICA ###
+#####################
+
+default_area_priority_north_america = {
+	allowed = {
+		is_normal_north_america_focused_tag = yes
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 170 #from -70 to 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 100 #from -70 to 30
+	}
+}
+
+default_area_priority_north_america_major = {
+	allowed = {
+		is_normal_north_america_focused_tag = yes
+	}
+	enable = {
+		is_major = yes
+	}
+	abort = {
+		is_major = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 130 #from -70 to 60
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 100 #from -70 to 30
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 100 #from -70 to 30
+	}
+}
+
+#####################
+### SOUTH AMERICA ###
+#####################
+
+default_area_priority_south_america = {
+	allowed = {
+		is_normal_south_america_focused_tag = yes
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 170 #from -70 to 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 90 #from -70 to 10
+	}
+}
+
+default_area_priority_south_america_major = {
+	allowed = {
+		is_normal_south_america_focused_tag = yes
+	}
+	enable = {
+		is_major = yes
+	}
+	abort = {
+		is_major = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 100 #from -70 to 30
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 80 #from -70 to 10
+	}
+}
+
+###############
+### OCEANIA ###
+###############
+
+default_area_priority_oceania = {
+	allowed = {
+		is_normal_pacific_focused_tag = yes
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 110 #from -70 to 40
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 110 #from -70 to 40
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 110 #from -70 to 40
+	}
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 80 #from -70 to 10
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 145 #from -70 to 75
+	}
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 120 #from -70 to 50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 145 #from -70 to 75
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 120 #from -70 to 50
+	}
+}

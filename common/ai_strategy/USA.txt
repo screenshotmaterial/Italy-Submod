@@ -1,0 +1,139 @@
+USA_focus_on_the_ACW = {
+	allowed = {
+		tag = USA
+	}
+
+	enable = {
+		has_global_flag = USA_leadup_to_the_war
+	}
+
+	abort = {
+		has_global_flag = USA_civil_war_over_flag
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = -200
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = -200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CSA
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = PSA
+		value = 20
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = TEX
+		value = 30
+	}
+}
+
+CSA_focus_on_the_ACW = {
+	allowed = {
+		tag = CSA
+	}
+
+	enable = {
+		has_global_flag = USA_leadup_to_the_war
+	}
+
+	abort = {
+		has_global_flag = USA_civil_war_over_flag
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = USA
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = PSA
+		value = 20
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = TEX
+		value = 30
+	}
+}
+
+TEX_focus_on_the_ACW = {
+	allowed = {
+		tag = TEX
+	}
+
+	enable = {
+		has_global_flag = USA_leadup_to_the_war
+	}
+
+	abort = {
+		has_global_flag = USA_civil_war_over_flag
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = USA
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = PSA
+		value = 20
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CSA
+		value = 30
+	}
+}
+
+PSA_focus_on_the_ACW = {
+	allowed = {
+		tag = PSA
+	}
+
+	enable = {
+		has_global_flag = USA_leadup_to_the_war
+	}
+
+	abort = {
+		has_global_flag = USA_civil_war_over_flag
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = -200
+	}
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = -200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = USA
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CSA
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = TEX
+		value = 30
+	}
+}
