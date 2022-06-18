@@ -1,0 +1,576 @@
+﻿l_english:
+
+### Tooltips ###
+ CA_theorist_tooltip: "Unlocks a new §YMilitary Theorist§!.\n"
+ CA_political_advisor_tooltip: "Unlocks a new §YPolitical Advisor§!.\n"
+
+### Decisions ###
+ CA_unite_central_asia: "Unite Central Asia"
+
+### Factions ###
+ Central_Asia_last_stand: "Pishkek Pact"
+
+### Parties ###
+ ALO_totalist_party: "Zhas Kazakh"
+ ALO_totalist_party_long: "Zhas Kazakh (Young Kazakhs)"
+ ALO_syndicalist_party: "$ALO_totalist_party$"
+ ALO_syndicalist_party_long: "$ALO_totalist_party_long$"
+ ALO_radical_socialist_party: "$ALO_totalist_party$"
+ ALO_radical_socialist_party_long: "$ALO_totalist_party_long$"
+ ALO_social_democrat_party: "$ALO_totalist_party$"
+ ALO_social_democrat_party_long: "$ALO_totalist_party_long$"
+ ALO_social_liberal_party: "Partiiasy Alash"
+ ALO_social_liberal_party_long: "Partiiasy Alash (Alash Party)"
+ ALO_market_liberal_party: "$ALO_social_liberal_party$"
+ ALO_market_liberal_party_long: "$ALO_social_liberal_party_long$"
+ ALO_social_conservative_party: "$ALO_social_liberal_party$"
+ ALO_social_conservative_party_long: "$ALO_social_liberal_party_long$"
+ ALO_authoritarian_democrat_party: "$ALO_social_liberal_party$"
+ ALO_authoritarian_democrat_party_long: "$ALO_social_liberal_party_long$"
+ ALO_paternal_autocrat_party: "Äskerï Ükimet"
+ ALO_paternal_autocrat_party_long: "Äskerï Ükimet (Military Government)"
+ ALO_national_populist_party: "Zhas Tulpar"
+ ALO_national_populist_party_long: "Zhas Tulpar (Young Tulpars)"
+
+ BUK_totalist_party: "Buxoro Ishchilar Partiyasi"
+ BUK_totalist_party_long: "Buxoro Ishchilar Partiyasi (Bukharan Workers' Party)"
+ BUK_syndicalist_party: "$BUK_totalist_party$"
+ BUK_syndicalist_party_long: "$BUK_totalist_party_long$"
+ BUK_radical_socialist_party: "$BUK_totalist_party$"
+ BUK_radical_socialist_party_long: "$BUK_totalist_party_long$"
+ BUK_social_democrat_party: "Yosh Buxoroliklar"
+ BUK_social_democrat_party_long: "Yosh Buxoroliklar (Young Bukharians)"
+ BUK_social_liberal_party: "$BUK_social_democrat_party$"
+ BUK_social_liberal_party_long: "$BUK_social_democrat_party_long$"
+ BUK_market_liberal_party: "$BUK_social_democrat_party$"
+ BUK_market_liberal_party_long: "$BUK_social_democrat_party_long$"
+ BUK_social_conservative_party: "$BUK_social_democrat_party$"
+ BUK_social_conservative_party_long: "$BUK_social_democrat_party_long$"
+ BUK_authoritarian_democrat_party: "Sulola-i Manghitia"
+ BUK_authoritarian_democrat_party_long: "Sulola-i Manghitia (Manghyt Dynasty)"
+ BUK_paternal_autocrat_party: "$BUK_authoritarian_democrat_party$"
+ BUK_paternal_autocrat_party_long: "$BUK_authoritarian_democrat_party_long$"
+ BUK_national_populist_party: "$BUK_authoritarian_democrat_party$"
+ BUK_national_populist_party_long: "$BUK_authoritarian_democrat_party_long$"
+
+ KHI_totalist_party: "Daşoguz Jemgyýeti"
+ KHI_totalist_party_long: "Daşoguz Talyplar Jemgyýeti (Dazogus Student Society)"
+ KHI_syndicalist_party: "$KHI_totalist_party$"
+ KHI_syndicalist_party_long: "$KHI_totalist_party_long$"
+ KHI_radical_socialist_party: "$KHI_totalist_party$"
+ KHI_radical_socialist_party_long: "$KHI_totalist_party_long$"
+ KHI_social_democrat_party: "Yosh Xivaliklar"
+ KHI_social_democrat_party_long: "Yosh Xivaliklar (Young Khivians)"
+ KHI_social_liberal_party: "$KHI_social_democrat_party$"
+ KHI_social_liberal_party_long: "$KHI_social_democrat_party_long$"
+ KHI_market_liberal_party: "$KHI_social_democrat_party$"
+ KHI_market_liberal_party_long: "$KHI_social_democrat_party_long$"
+ KHI_social_conservative_party: "$KHI_social_democrat_party$"
+ KHI_social_conservative_party_long: "$KHI_social_democrat_party_long$"
+ KHI_authoritarian_democrat_party: "Jüneýit Hökümeti"
+ KHI_authoritarian_democrat_party_long: "Jüneýit Hökümeti (Junaid's Government)"
+ KHI_paternal_autocrat_party: "$KHI_authoritarian_democrat_party$"
+ KHI_paternal_autocrat_party_long: "$KHI_authoritarian_democrat_party_long$"
+ KHI_national_populist_party: "$KHI_authoritarian_democrat_party$"
+ KHI_national_populist_party_long: "$KHI_authoritarian_democrat_party_long$"
+
+ TRK_totalist_party: "Sosialistlar Tüdesi"
+ TRK_totalist_party_long: "Turkestan Sosialistlar Tüdesi (Turkestan Circle of Socialists)"
+ TRK_syndicalist_party: "$TRK_totalist_party$"
+ TRK_syndicalist_party_long: "$TRK_totalist_party_long$"
+ TRK_radical_socialist_party: "$TRK_totalist_party$"
+ TRK_radical_socialist_party_long: "$TRK_totalist_party_long$"
+ TRK_social_democrat_party: "$TRK_totalist_party$"
+ TRK_social_democrat_party_long: "$TRK_totalist_party_long$"
+ TRK_social_liberal_party: "Milliy Ittihod"
+ TRK_social_liberal_party_long: "Milliy Ittihod (National Union)"
+ TRK_market_liberal_party: "$TRK_social_liberal_party$"
+ TRK_market_liberal_party_long: "$TRK_social_liberal_party_long$"
+ TRK_social_conservative_party: "$TRK_social_liberal_party$"
+ TRK_social_conservative_party_long: "$TRK_social_liberal_party_long$"
+ TRK_authoritarian_democrat_party: "Muvaqqat Hukumati"
+ TRK_authoritarian_democrat_party_long: "Muvaqqat Farg'ona Hukumati (Provisional Government of Ferghana)"
+ TRK_paternal_autocrat_party: "$TRK_authoritarian_democrat_party$"
+ TRK_paternal_autocrat_party_long: "$TRK_authoritarian_democrat_party_long$"
+ TRK_national_populist_party: "$TRK_authoritarian_democrat_party$"
+ TRK_national_populist_party_long: "$TRK_authoritarian_democrat_party_long$"
+
+### Country Names ###
+ ALO: "Alash Orda"
+ ALO_ADJ: "Alash"
+ ALO_DEF: "the Alash Orda"
+
+ ALO_totalist: "Alash Socialist Republic"
+ ALO_totalist_DEF: "the Alash Socialist Republic"
+ ALO_syndicalist: "$ALO_totalist$"
+ ALO_syndicalist_DEF: "$ALO_totalist_DEF$"
+ ALO_radical_socialist: "$ALO_totalist$"
+ ALO_radical_socialist_DEF: "$ALO_totalist_DEF$"
+
+ ALO_RUS_subject: "Alash Autonomy"
+ ALO_RUS_subject_DEF: "the Alash Autonomy"
+
+ ALO_SOV_subject: "$ALO_RUS_subject$"
+ ALO_SOV_subject_DEF: "$ALO_RUS_subject_DEF$"
+
+ BUK: "Bukhara"
+ BUK_ADJ: "Bukharan"
+ BUK_DEF: "$BUK$"
+
+ BUK_totalist: "Bukharan Republic"
+ BUK_totalist_DEF: "the Bukharan Republic"
+ BUK_syndicalist: "$BUK_totalist$"
+ BUK_syndicalist_DEF: "$BUK_totalist_DEF$"
+ BUK_radical_socialist: "$BUK_totalist$"
+ BUK_radical_socialist_DEF: "$BUK_totalist_DEF$"
+
+ BUK_RUS_subject: "Bukharan Autonomy"
+ BUK_RUS_subject_DEF: "the Bukharan Autonomy"
+
+ BUK_SOV_subject: "$BUK_RUS_subject$"
+ BUK_SOV_subject_DEF: "$BUK_RUS_subject_DEF$"
+
+ KHI: "Khiva"
+ KHI_ADJ: "Khivan"
+ KHI_DEF: "$KHI$"
+
+ KHI_totalist: "Khorezm Commune"
+ KHI_totalist_ADJ: "Khorezmian"
+ KHI_totalist_DEF: "the Khorezm Commune"
+ KHI_syndicalist: "$KHI_totalist$"
+ KHI_syndicalist_ADJ: "$KHI_totalist_ADJ$"
+ KHI_syndicalist_DEF: "$KHI_totalist_DEF$"
+ KHI_radical_socialist: "$KHI_totalist$"
+ KHI_radical_socialist_ADJ: "$KHI_totalist_ADJ$"
+ KHI_radical_socialist_DEF: "$KHI_totalist_DEF$"
+
+ KHI_social_democrat: "Khivan Republic"
+ KHI_social_democrat_DEF: "the Khivan Republic"
+ KHI_social_liberal: "$KHI_social_democrat$"
+ KHI_social_liberal_DEF: "$KHI_social_democrat_DEF$"
+ KHI_market_liberal: "$KHI_social_democrat$"
+ KHI_market_liberal_DEF: "$KHI_social_democrat_DEF$"
+ KHI_social_conservative: "$KHI_social_democrat$"
+ KHI_social_conservative_DEF: "$KHI_social_democrat_DEF$"
+
+ KHI_RUS_subject: "Khorezm Autonomy"
+ KHI_RUS_subject_ADJ: "$KHI_totalist_ADJ$"
+ KHI_RUS_subject_DEF: "the Khorezm Autonomy"
+
+ KHI_SOV_subject: "$KHI_RUS_subject$"
+ KHI_SOV_subject_ADJ: "$KHI_totalist_ADJ$"
+ KHI_SOV_subject_DEF: "$KHI_RUS_subject_DEF$"
+
+ TRK: "Turkestan"
+ TRK_ADJ: "Turkestani"
+ TRK_DEF: "$TRK$"
+
+ TRK_totalist: "Turkestan Commune"
+ TRK_totalist_DEF: "the Turkestan Commune"
+ TRK_syndicalist: "$TRK_totalist$"
+ TRK_syndicalist_DEF: "$TRK_totalist_DEF$"
+ TRK_radical_socialist: "$TRK_totalist$"
+ TRK_radical_socialist_DEF: "$TRK_totalist_DEF$"
+
+ TRK_social_liberal: "Turkestan Republic"
+ TRK_social_liberal_DEF: "the Turkestan Republic"
+ TRK_market_liberal: "$TRK_social_liberal$"
+ TRK_market_liberal_DEF: "$TRK_social_liberal_DEF$"
+ TRK_social_conservative: "$TRK_social_liberal$"
+ TRK_social_conservative_DEF: "$TRK_social_liberal_DEF$"
+ TRK_authoritarian_democrat: "$TRK_social_liberal$"
+ TRK_authoritarian_democrat_DEF: "$TRK_social_liberal_DEF$"
+ TRK_paternal_autocrat: "$TRK_social_liberal$"
+ TRK_paternal_autocrat_DEF: "$TRK_social_liberal_DEF$"
+ TRK_national_populist: "$TRK_social_liberal$"
+ TRK_national_populist_DEF: "$TRK_social_liberal_DEF$"
+
+ TRK_RUS_subject: "Turkestan Autonomy"
+ TRK_RUS_subject_DEF: "the Turkestan Autonomy"
+
+ TRK_SOV_subject: "$TRK_RUS_subject$"
+ TRK_SOV_subject_DEF: "$TRK_RUS_subject_DEF$"
+
+### Cosmetic Tags ###
+ CA_united: "Central Asia"
+ CA_united_ADJ: "Central Asian"
+ CA_united_DEF: "$CA_united$"
+
+ CA_united_totalist: "Central Asian Federation"
+ CA_united_totalist_DEF: "the Central Asian Federation"
+ CA_united_syndicalist: "$CA_united_totalist$"
+ CA_united_syndicalist_DEF: "$CA_united_totalist_DEF$"
+ CA_united_radical_socialist: "$CA_united_totalist$"
+ CA_united_radical_socialist_DEF: "$CA_united_totalist_DEF$"
+ CA_united_social_democrat: "$CA_united_totalist$"
+ CA_united_social_democrat_DEF: "$CA_united_totalist_DEF$"
+ CA_united_social_liberal: "$CA_united_totalist$"
+ CA_united_social_liberal_DEF: "$CA_united_totalist_DEF$"
+ CA_united_market_liberal: "$CA_united_totalist$"
+ CA_united_market_liberal_DEF: "$CA_united_totalist_DEF$"
+ CA_united_social_conservative: "$CA_united_totalist$"
+ CA_united_social_conservative_DEF: "$CA_united_totalist_DEF$"
+ CA_united_authoritarian_democrat: "$CA_united_totalist$"
+ CA_united_authoritarian_democrat_DEF: "$CA_united_totalist_DEF$"
+ CA_united_paternal_autocrat: "$CA_united_totalist$"
+ CA_united_paternal_autocrat_DEF: "$CA_united_totalist_DEF$"
+ CA_united_national_populist: "$CA_united_totalist$"
+ CA_united_national_populist_DEF: "$CA_united_totalist_DEF$"
+
+### Characters ###
+ ALO_zhumabay_shayakhmetov: "Zhumabay Shayakhmetov"
+ ALO_saken_seifullin: "Saken Seifullin"
+ ALO_alimkhan_yermekov: "Alimkhan Yermekov"
+ ALO_alikhan_bukeikhanov: "Alikhan Bukeikhanov"
+ ALO_alikhan_bukeikhanov_leader_desc: "Born in 1866, Alikhan Bukeikhanov was a part of the Kazakh upper class from birth - he was a direct descendant of the khans of the Bukei Horde, an autonomous Kazakh state which surrendered to the Russians in the 19th century. He acquired his higher education in St. Petersburg and grew up influenced by Kadet liberalism and moderate socialism - ultimately, this drew him to become a member of the Kadets and a diligent campaigner for Kazakh independence. After the Revolution of 1905, he split off to found the Alash Party - a moderate liberal political party advocating for an autonomous Kazakh entity in a greater Russia. This dream became real after the February Revolution of 1917, when thanks to Alexander Kerenskiy's support, Bukeikhanov was sent to Kazakhstan in order to organise a congress of Kazakhs in Semipalatinsk.\n\nDuring the Russian Civil War, the Alash Autonomy became a battleground between several factions, although it eventually managed to assert the integrity of its territory. Having achieved the primary goal of his life, Bukeikhanov retired from his position as President and allowed democracy to take charge. Until 1925, that is. A war between the Alash Autonomy and the Turkestan Republic, and the Kolchak Coup in Russia turned the Autonomy's continued existence untenable. Bukeikhanov was placed back in charge by junior Kazakh officers and granted wide-reaching emergency powers to resolve the crisis - and ultimately, he did. Southern raids and Russian integrationist tendencies have forced him to continue the state of emergency. At this point, the 70 year old Bukeikhanov is simply... tired. Especially tired of the Russians. And as long as he is given a chance, he will not hesitate to break the Autonomy away from this rotten structure."
+ ALO_amanzholov_sadyk_ayukevich: "Amanzholov Sadyk Ayukevich"
+ ALO_bauyrzhan_momyshuly: "Bauyrzhan Momyshuly"
+ ALO_bazarbay_mamentov: "Bazarbay Mamentov"
+ ALO_mukhamedzhan_tynyshpaev: "Mukhamedzhan Tynyshpaev"
+ ALO_smagul_sadwakasov: "Smagul Sadwakasov"
+ ALO_sultanbek_khojanov: "Sultanbek Khojanov"
+ ALO_zhumabay_shayakhmetuly: "Zhumabay Shayakhmetuly"
+
+ ALO_army_council: "Army Reform Group"
+ ALO_pavel_dutov: "Pavel Dutov"
+ ALO_akhmet_baitursynov: "Akhmet Baitursynov"
+ ALO_mirjaqip_dulatuli: "Mirjaqip Dulatuli"
+ ALO_zhansha_dosmukhamedov: "Zhansha Dosmukhamedov"
+ ALO_validkhan_sherafeddinovich: "Validkhan Sherafeddinovich"
+ ALO_khalel_dosmukhameduly: "Khalel Dosmukhameduly"
+
+ BUK_mohammed_alim_khan: "Mohammed Alim Khan"
+ BUK_mohammed_alim_khan_leader_desc: "Emir Sayyid Mir Muhammad Alim Khan was groomed from birth to be the pawn of a foreign Emperor. At thirteen, the young heir was sent to Saint Petersburg, where he studied modern military strategy and strengthened his understanding of the Russian way of life, and the rule of the Tsar. At the time of his ascension to the throne, Alim Khan had promised a number of modern reforms to the Absolute Monarchy of Bukhara, and initially he made good on his promises to reformers in his kingdom. It did not take long for the Emir to realise, however, that the plans of the Jadid reformists held little room for divine rule, and his support for them quickly waned. This reversal would culminate at the height of the Civil War, when Alim Khan made a deal with the Young Bukharans, sparing them as his purged Bukhara of pro-Soviet forces. In the following years, however, the Emir has allied himself closely with his traditional rivals in the Lokai Tribesmen, led by the formidable Ibrahim Bek. With his fundamentalist base secured, it is only a matter of time before Alim Khan finishes off the liberal elements in his realm."
+ BUK_fayzullah_khodjaev: "Fayzullah Khodjaev"
+ BUK_sadriddin_ayni: "Sadriddin Ayni"
+ BUK_ibrahim_bek: "Ibrahim Bek"
+ BUK_mulla_abdul_qahhor: "Mulla Abdul Qahhor"
+ BUK_shahmurad_khan: "Shahmurad Khan"
+ BUK_kayumz_mirza: "Kayumz Mirza"
+ BUK_nizamaddin_urganji: "Nizamaddin Urganji"
+ BUK_usman_khojaev: "Usman Khojaev"
+ BUK_munip_pasha: "Munip Pasha"
+ BUK_sobir_rakhimov: "Sobir Rakhimov"
+ BUK_tajiali_babaev: "Tajiali Babaev"
+ BUK_abdusalim_dekhkanbaev: "Abdusalim Dekhkanbaev"
+ BUK_ishan_khan: "Ishan Khan"
+ BUK_abdurauf_fitrat: "Abdurauf Fitrat"
+ BUK_akmal_ikramov: "Akmal Ikramov"
+ BUK_mahmudkhodja_behbudiy: "Mahmudkhodja Behbudiy"
+ BUK_yuldash_akhunbabaev: "Yuldash Akhunbabaev"
+
+ KHI_junaid_khan: "Junaid Khan"
+ KHI_junaid_khan_leader_desc: "Born Muhammet-Kurban, son of a powerful Headman in the Yomud Turkmen tribe, the ambitious Junaid Khan quickly rose to a position of prominence in Khiva. The Qungrat Uzbek ruler of Khiva, Isfandiyar Khan, was too weak to resist the rise of the liberal nationalist Young Khivans, ceding his rights and powers to a weak and indecisive assembly of intellectuals and merchants. In response, Muhammet-Kurban assembled an army of dissatisfied Turkmen tribes and cast out the Young Khivans. Instead of entrusting the ancient prerogatives of Khanate to the weak Isfandiyar, he instead took power for himself as Junaid Khan, ruler of Khiva. He continued to respect the prestige of the house of Qungrat by ridding them of the embarrassment of Isfandiyar, and ruling as the Noble Commander of his young relative Sayid Abdullah. There is no mistaking the loyalty of Khiva’s Basmachi armies, however, they follow the true Khan of Khiva."
+ KHI_balysh_ovezov: "Balysh Ovezov"
+ KHI_eshi_khan: "Eshi Khan"
+ KHI_oraz_geldy_kandzhik: "Oraz Geldy Kandzhik"
+ KHI_azis_khan_chapykov: "Azis Khan Chapykov"
+ KHI_said_abdullah_khan: "Said Abdullah Khan"
+ KHI_bobookhun_salimov: "Bobookun Salimov"
+ KHI_haji_sami: "Haji Sami"
+ KHI_tachmamed_niyazmamedov: "Tachmamed Niyazmamedov"
+ KHI_kasym_beshimov: "Kasym Beshimov"
+ KHI_tashtemir_rustemov: "Tashtemir Rustemov"
+ KHI_usman_yusupov: "Usman Yusupov"
+ KHI_yusupov_polvonniyoz_hoji: "Yusupov Polvonniyoz Hoji"
+ KHI_shadzha_batyrov: "Shadzha Batyrov"
+ KHI_berdi_myradowic_kerbabayew: "Berdi Myradowic Kerbabayew"
+ KHI_bekjon_rahmon: "Bekjon Rahmon"
+ KHI_kaikhaziz_atabayev: "Kaikhaziz Atabayev"
+
+ TRK_madamin_bek: "Madamin Bek"
+ TRK_madamin_bek_leader_desc: "When Madamin Bek rose to the forefront, it was not as a leader, but rather as a Lieutenant under the rule of ‘Katta’ Ergash Bek. Ergash used the support of the conservative Ulema and aristocratic landowners to solidify control of the Basmachi as the ‘Amir-al-Musulman,’ leaving Madamin as his deputy. However, the energetic and pragmatic Madamin cultivated support among the moderate Muslim elements and the Russian Peasant Army, and leveraged these connections to form the Fergana Provisional Government, with himself as first President. As the Red forces were beaten back, Madamin swayed many tribal leaders to his side, solidifying his grasp over the Fergana Valley and subordinating his former superior. Madamin survives on the basis of his interpersonal connections and his compromising nature, expertly navigating the cutthroat world of tribal and sectarian politics to rule over a teetering coalition."
+ TRK_turar_ryskulov: "Turar Ryskulov"
+ TRK_mustafa_shokay: "Mustafa Shokay"
+ TRK_kurshirmat: "Kurshirmat"
+ TRK_muetdin_bek: "Muetdin Bek"
+ TRK_katta_ergash: "Katta Ergash"
+ TRK_konstantin_monstrov: "Konstantin Monstrov"
+ TRK_khal_khodzha: "Khal Khodzha"
+ TRK_akif_pasha: "Akif Pasha"
+ TRK_musa_jalil: "Musa Jalil"
+ TRK_ismailbek_taranchiev: "Ismailbek Taranchiev"
+ TRK_akhmedzhan_shukurov: "Akhmedzhan Shukurov"
+ TRK_abdulla_qodiriy: "Abdulla Qodiriy"
+ TRK_nazir_tyuryakulov: "Nazir Tyuryakulov"
+ TRK_torekul_aitmatov: "Torekul Aitmatov"
+ TRK_munawwar_qari_abdurrashidkhan: "Munawwar Qari Abdurrashidkhan"
+ TRK_arif_alimov: "Arif Alimov"
+
+### Focus ###
+
+ ALO_independence_at_last: "Independence at Last!"
+ ALO_independence_at_last_desc: "For years, we kowtowed to Petrograd, suffering injustices and humiliations to retain our hard-fought autonomy. In these years, those Russians who respect our treaties and agreements have dwindled away, purged and assassinated until few left in the capital would dare speak in favor of our noble project. We cannot allow ourselves to be written away by executive decree, instead, we shall fight for our freedom!"
+
+ ALO_the_alash_platform: "Unite the Alash Cliques"
+ ALO_the_alash_platform_desc: "The Alash Party has ruled over these lands without interruption for nearly two decades, held together by personal bonds of loyalty between local levers of power and the charismatic leadership of Bukeikhanov. However, the various leadership cliques surrounding Dosmukhamedov, Dulatuli, and Ayukevich must be brought to heel, so that the party may prosper."
+
+ ALO_kemalist_principles: "Follow Kemalist Principles"
+ ALO_kemalist_principles_desc: "The central platform of the Alash Party is that of modernisation, and its leaders cast off their Kadet and SR credentials in hopes of pursuing a new modern course for their people, looking enviously towards the successes of the Ottoman Grand Vizier Kemal. In years past, Russian governors have kept us from pursuing our future, but no longer!"
+
+ ALO_overcoming_our_deficits: "Overcoming our Deficits"
+ ALO_overcoming_our_deficits_desc: "The steppes have little in the ways of industrial resources, and years of Russian neglect have had their toll on our modernising efforts. Now that we have cast off our shackles, we have the opportunity to bring our nation into the future by rapidly building up heavy industry through direct state intervention."
+
+ ALO_rally_the_people: "Rally the People"
+ ALO_rally_the_people_desc: "It is easy to see the endless democratic rule of the Alash Party as a clear indicator of popular support, but in many ways this is merely the indicator of a corrupt hegemony. To survive against our enemies, we must rally our people behind the Green, Yellow, and Red Banner!"
+
+ ALO_face_to_the_west: "A New Turn to the West"
+ ALO_face_to_the_west_desc: "The intellectuals and elites of the Alash Party have always looked to the West, be it Paris, Berlin, Istanbul, or London. The ideals of the party are entrenched in perceptions of European success: secularism, liberalism, and radical modernism. With the pressure of the Russian boot lifted, if only briefly, perhaps we can finally join the Western World."
+
+ ALO_secular_education: "Finalise Education Reforms"
+ ALO_secular_education_desc: "Attempts to create a national education system in the European model failed in the last decade, largely due to interference from the Russians and a divide between the more radical and traditional members of the Party. With the governor ousted, and the party in lock-step behind Bukeikhanov, the time is ripe to create a secular and national education in our nation."
+
+ ALO_national_identity: "Forge a National Identity"
+ ALO_national_identity_desc: "By nature, the Alash Orda is a Kazakh nation. However, the people of our great nation do not see themselves as a united polity, but rather cling to regional and tribal identities. This presents an opportunity, as well as a challenge. We will not merely be Kazakh, but rather Alash, a brotherhood of all Turks!"
+
+ ALO_gradual_land_reform: "Pursue Gradual Land Reform"
+ ALO_gradual_land_reform_desc: "For years, our government has engaged in rounds of careful negotiations with the Russian settlers of the early 1900’s. While we remained under the boot of the Russians, however, years of careful compromise were often brushed away by the actions of the central government and their appointed governors. Now that we can maneuver freely, however, we are confident that a more equitable arrangement can be reached."
+
+ ALO_grant_basic_worker_rights: "Expand Basic Worker Rights"
+ ALO_grant_basic_worker_rights_desc: "As we expand our industry, we run the risk of losing the support of workers to the left-wing movements in the cities. A law guaranteeing expanded labor rights such retain the patronage of this patriotic workers, while potentially increasing productivity in the workplace."
+
+ ALO_radical_land_reform: "Seize the Traitor Settlements"
+ ALO_radical_land_reform_desc: "For years, the Russians have bled our nation dry, driving us from the north and sneering at our feeble attempts to negotiate. Now, for the first time in centuries, it is us Kazakhs who have the upper hand. We will not waste this opportunity! The Russian landowner will no longer deprive our brave brothers of their country!"
+
+ ALO_republic_of_equals: "A Republic of Equals"
+ ALO_republic_of_equals_desc: "Our nation is divided between Russian and Turk, and the strife of colonisation and war threatens to tear us apart. We cannot give in to the base desire to overpower and dominate our neighbors. We shall instead build a nation of equals, founded on the principles of fruitful coexistence."
+
+ ALO_surviving_the_onslaught: "Surviving the Onslaught"
+ ALO_surviving_the_onslaught_desc: "It is one thing to declare independence, it is another entirely to be independent. The Russians aim to crush us, to subjugate the steppes as their Muscovite forefathers did nearly a century ago. Our defence will be legendary, and whether our nation survives or returns to the dustbin of history, we will go forward into the night with our heads held high."
+
+ ALO_formalise_the_militias: "Recall the Militias"
+ ALO_formalise_the_militias_desc: "When the Russian Civil War spilled out onto our steppe homeland, brave and dutiful men rose to protect her from the red menace. Once again, the threat of subjugation looms large, and once again we will need to call upon a new generation of stalwart defenders."
+
+ ALO_pan_turkish_coordination: "Pan-Turkic Coordination"
+ ALO_pan_turkish_coordination_desc: "We have long been in communication with our Central Asian brothers to the south, especially Madamin Bek and Mustafa Shokay’s Republic of Turks found in the Fergana Valley. While we have less in common with the autocrats ruling in Bukhara and Khiva, the message is simple: we must all hang together, or else we will certainly all hang separately."
+
+ ALO_inspect_the_ottoman_inspectorate: "Inspect the Ottoman Army Inspectorate"
+ ALO_inspect_the_ottoman_inspectorate_desc: "The Ottomans have put a great deal of effort into modernising their equipment and tactics since the end of the Weltkrieg, and the Army Inspectorate is a shining example of this spirit. We should look to replicate their successes."
+
+ ALO_expand_caspian_sea_ports: "Expand the Caspian Sea Ports"
+ ALO_expand_caspian_sea_ports_desc: "Since its construction nearly a century ago, Fort Aleksandrovsky has granted those who occupied it control over much of the Caspian, a fact which was only reinforced at the height of the Civil War when Red and White warships clashed outside its waters. By expanding its infrastructure, we will better be able to control trade in the Caspian."
+
+ ALO_tashkent_to_verniy_line: "Connect to Turkestan via Rail"
+ ALO_tashkent_to_verniy_line_desc: "Most of our rail lines run through Russian connections, leaving us vulnerable in the face of Russian aggression. By rapidly building a light railway connecting us to Tashkent, we will further integrate with their economy, and better be able to coordinate our armies."
+
+ ALO_unite_the_commands: "Unite the Commands"
+ ALO_unite_the_commands_desc: "While our autonomy afforded us the right to form our own militias and gendarmes, we were not permitted by our Russian overlords to form a central army for our lands. With this in mind, our current forces are divided, disorganized, and far from a cohesive fighting force. If we plan to face the bear in battle, our units must answer to some sort of higher authority."
+
+ ALO_cavalry_focus: "Expand our Cavalry Corps"
+ ALO_cavalry_focus_desc: "The core of our military is made up of a number of professional cavalry divisions, which were used to great effect during the chaos of the 20s and which we held mobilised in the years following. While we were able to convince the governor-general that these soldiers were little more than light gendarme units, in truth they are trained and experienced horsemen, personally loyal to Supreme Commander Ayukevich."
+
+ ALO_temporary_military_rule: "Temporary Military Rule"
+ ALO_temporary_military_rule_desc: "The threat of the Russian advance looms large, and there are some who feel that the democratically elected government is too disunited and brittle to survive the Russian hammer. In its place, Supreme Commander Ayukevich will form an emergency military government, to safeguard our national sovereignty and institutions against the Russian enemy."
+
+ ALO_alash_means_kazakh: "Alash Means Kazakh!"
+ ALO_alash_means_kazakh_desc: "The word Alash has many meanings. Some say that it is merely a word for tribesman or relative, but others feel that the word holds a special connection to the Kazakh people. The intelligentsia can debate as long as they want on the finer meaning of a phrase, but the meaning of Alash is clear to us. There is no room in our nation for Russian fifth-columnists and weak-hearted poets."
+
+ ALO_war_for_survival: "War for Survival"
+ ALO_war_for_survival_desc: "This is a war for the very survival of our nation and our people. If we lose against the Russian menace, Muscovite settlers will continue to pour into our ancestral homes, casting us further and further south. Our fight is not one of conquest or of ideological struggle! We shall not perish!"
+
+ central_asia_russian_bear_awakens: "The Bear Awakens"
+ central_asia_russian_bear_awakens_desc: "It has been years since we cast off the yoke of Russian imperialism and earned our freedom. Yet we still eye the north warily, vigilant in our weakness. The rumours which have trickled down to us are worrying- they speak of a new period of conquest and destruction."
+
+ central_asia_develop_the_land: "Develop the Land"
+ central_asia_develop_the_land_desc: "During the colonial rule of the Russians, the traditional waqf agricultural holdings were violently broken up, replaced by cotton fields designed to fuel the nascent industrial developments of the Russian settlers. While the Russian overlords have been pushed out, we still need to complete our land reform."
+
+ central_asia_focus_on_cities: "Focus on the Cities"
+ central_asia_focus_on_cities_desc: "For centuries, the great and ancient cities of the Central Asian Steppe dominated the flow of goods and ideas on the Silk Road. Today, they stand as crumbling shadows of their former glory. If we hope to stand in the face of destruction, we will need to develop our urban centres."
+
+ central_asia_stretch_our_resources: "Stretch our Resources"
+ central_asia_stretch_our_resources_desc: "Our people are hardy, used to making the most out of poor odds and inhospitable terrain. During the Civil War, our forces were renowned for their austerity and ingenuity. These qualities will be invaluable in the war to come."
+
+ central_asia_open_the_arsenals: "Open the Arsenals"
+ central_asia_open_the_arsenals_desc: "Our greatest weakness is our continued reliance on foreign weapons to arm our militias. By creating some small homegrown armouries, we will ensure our ability to defend our lands."
+
+ central_asia_reform_the_resistance: "Reform the Resistance"
+ central_asia_reform_the_resistance_desc: "The tribal bands of fighters which made up the backbone of our armies have long since returned to their homes, contented by our victory. We will need to make sure these brave brothers are still prepared to defend the lands they till."
+
+ central_asia_rouse_the_people: "Rouse the People"
+ central_asia_rouse_the_people_desc: "It has been nearly two decades since our people fought against the Russian oppressor. In that time our nation has grown divided and unprepared. We must remind our brothers who the true enemy is, and why we must prepare for their return."
+
+ central_asia_expand_conscription: "Expand Conscription"
+ central_asia_expand_conscription_desc: "It was the issue of conscription which first roused our people in revolt against the Russian tyrant. However, it is one thing to fight half a world away in the army of the infidel against the Caliph, and another entirely to be asked to defend your home!"
+
+ central_asia_study_the_first_war_of_liberation: "Study the War of Liberation"
+ central_asia_study_the_first_war_of_liberation_desc: "The war of liberation provided us with a clear blueprint to dispel the Muscovite menace from our lands. To ignore the lessons of that conflict is to tempt failure and destruction."
+
+ central_asia_drill_our_soldiers: "Drill our Soldiers"
+ central_asia_drill_our_soldiers_desc: "It is no secret that the tribal militias which provides the backbone of our army are made up of farmers, tradesmen, and shepherds, not warriors and soldiers. We will have to train these men if they hope to survive in a modern war."
+
+ central_asia_secure_the_homefront: "Secure the Homefront"
+ central_asia_secure_the_homefront_desc: "During the Civil War, many Nationalists in our lands were swayed by the false promises of the socialists, dividing our people and causing untold suffering. We must unite our people under one flag in the face of imminent war."
+
+ central_asia_war_for_survival: "War for Survival"
+ central_asia_war_for_survival_desc: "Our fight is not one of conquest or ideological strife, but rather a war for the very survival of our people, our religion, and our freedom. We must hold strong in our defense of our homeland, for the alternative is the utter annihilation of our way of life."
+
+ TRK_unite_moderate_factions: "Unite the Moderate Factions"
+ TRK_unite_moderate_factions_desc: "The moderates of Tashket and Fergana have long played a critical role in the maintenance of peace in our nation, often acting as mediators between the mutual hostility of the Uzbek and Kirghiz tribes. We need to unite these moderate groups behind our government to stabilise our rule."
+
+ TRK_standardize_our_equipment: "Standardise our Equipment"
+ TRK_standardize_our_equipment_desc: "While our armies are divided between local Basmachi commanders, the central committee of our Provisional Government has carved out some control over these local leaders. By standardising military equipment, we would further unite our forces and streamline coordination."
+
+ TRK_embrace_pan_turkism: "Embrace Pan-Turkism"
+ TRK_embrace_pan_turkism_desc: "Many in our government subscribe to the theory of Pan-Turkism, the notion that all Turkic peoples should seek cultural and political unification. While the initial post-Weltkrieg idealism of Shokay and others has yielded few successes, we have a very real chance of achieving Turkic unity in the face of the increasingly imminent Russian threat."
+
+ TRK_our_ottoman_brothers: "Our Ottoman Brothers"
+ TRK_our_ottoman_brothers_desc: "The Ottoman Empire, while made up of a number of ethnic groups, is at its heart a Turkish nation. We must leverage our shared heritage with them, as they alone have the ability and the will to aid us in our struggle against the Russian bear."
+
+ TRK_enlist_the_jadid: "Enlist the Jadid"
+ TRK_enlist_the_jadid_desc: "The city-dwelling merchant and intellectual class of Muslim modernist reformers has long been the greatest source of personal support for Madamin Bek, even as he began to hollow out the promised reforms of his increasingly autocratic government."
+
+ TRK_settling_the_settler_conflict: "Settling the Settler Conflict"
+ TRK_settling_the_settler_conflict_desc: "The Fergana Provisional Government was founded on the back of an alliance between the Muslim People's Army of Madamin Bek and the Russian Peasant's Army of Konstantin Monstrov. While Madamin has maintained the peace by continuing this cooperation, the long-term issues of Russian settlement must be solved."
+
+ BUK_recall_mission_to_kostantiniyye: "Recall our Mission to Kostantiniyye"
+ BUK_recall_mission_to_kostantiniyye_desc: "A few years ago, some of our finest officers were invited to travel to the Ottoman capital, to better learn the art of modern warfare. It is now time to harvest the fruits of this endeavor and to reform our Royal Army around this core of learned men."
+
+ BUK_contacts_in_afghanistan: "Our Contacts in Afghanistan"
+ BUK_contacts_in_afghanistan_desc: "Many of the Tajik and Uzbek tribal leaders in our nation have fostered ties across the border in Afghanistan. After all, in the hinterlands of our Emirates one’s loyalties lie with local authorities far above that of Kabul or Bukhara. We must draw upon these connections for our benefit."
+
+ BUK_honour_the_ulama: "Honour the Ulama"
+ BUK_honour_the_ulama_desc: "The Ulema Jemyeti, or Board of Learned Men, is a council of Muslim leaders focused on maintaining the position of Islam and its clerics in Turkestan. By reaffirming our commitment to Shari’a and the supremacy of Muslims in our society, we can solidify their support for the Emir."
+
+ BUK_the_emirs_right_hand: "The Emir's Right Hand"
+ BUK_the_emirs_right_hand_desc: "Ever since the red menace threatened to dethrone our Emir, the old rivalry between the Lokai leader Ibrahim Bek and Alim Khan has turned into a pragmatic alliance to retain Bukhara’s independence. A proven military commander and a devout Muslim, Ibrahim will be an invaluable ally to the throne."
+
+ BUK_expand_the_ark: "Expand the Ark"
+ BUK_expand_the_ark_desc: "In legends, the Ark of Bukhara was constructed by the epic hero Siyavusha, who built a great palace within the bounds of a bull skin to win the hand of his love, the king’s daughter. In reality, the fort at the heart of the city has been demolished and rebuilt countless times over hundreds of years. We must reinforce it, lest it be demolished again."
+
+ BUK_purge_reformers: "Purge the Remnant Reformers"
+ BUK_purge_reformers_desc: "The last decades have seen Alim Khan slowly wear away the power of the Young Bukharans, solidifying his position as the absolute monarch of his realm. With a quick purge of remaining liberal forces, Alim Khan would finally eliminate the fifth columns which threaten to unseat him."
+
+ KHI_one_khanate_two_khans: "One Khanate, two Khans"
+ KHI_one_khanate_two_khans_desc: "The Qungrat Khans have long been a useful tool for Junaid Khan’s regime, granting him the legitimacy and image that an illiterate tribal opportunist often lacks. By investing in the image of Sayid Abdullah, Khiva gains a symbol to march for."
+
+ KHI_unite_the_tribes: "Unite the Tribes"
+ KHI_unite_the_tribes_desc: "When Junaid Khan rose to power, it was on the back of a wave of tribal support. Even today, with his power cemented, the role of the conservative tribal leaders is central to our government’s control. In recent years Junaid has lost the favor of some Turkmen, appearing to them as impotent and weak. They must be proven wrong."
+
+ KHI_reinforce_khiva: "Reinforce Khiva"
+ KHI_reinforce_khiva_desc: "Khiva stands as a city outside of this era, isolated and ancient. As the base of our power, it is vital that the city is built up, so that we can properly defend our Khanate."
+
+ KHI_attract_adventurers_and_exiles: "Attract Adventurers and Exiles"
+ KHI_attract_adventurers_and_exiles_desc: "There are a great number of men in this world who want little more than the chance for gold and glory, or merely a fresh start. After all, the Russian Civil War bred many who value the indiscretion of Junaid Khan’s government above all else, and many have invaluable experience fighting on the steppes. Who cares if they rose arms against us decades ago? What matters now is that they are willing to raise arms with us today."
+
+ KHI_caspian_gunrunners: "Caspian Gun-Runners"
+ KHI_caspian_gunrunners_desc: "Opponents of Junaid Khan have often described him as a bandit or a criminal. While both of these titles are not fitting for the Noble Commander, it is no lie that he has forged connections with smugglers and gun-merchants, who offer to transport foreign weapons across the Caspian Sea...for a price."
+
+ KHI_junaids_horsemen: "Junaid's Horsemen"
+ KHI_junaids_horsemen_desc: "The core of Junaid Khan’s army is a band of fierce Turkmen horsemen, a personal army of loyal and committed warriors who have followed the Khan since he first marched on Khiva. This army gives the forces of Khiva a unique touch, they are not divided into cliques and factions, unlike the militias of Fergana or Bukhara."
+
+### Ideas ###
+ central_asia_underdeveloped_industry: "Underdeveloped Industry"
+ central_asia_underdeveloped_industry_desc: "The nations of Central Asia lack much in the way of developed industry. While the colonial farming structures of the Russian Empire has been largely dismantled, the region broadly remains as a backwater."
+
+ central_asia_guerilla_army: "'Basmachi' Army"
+ central_asia_guerilla_army_desc: "The term Basmachi is an Uzbek word for a bandit or attacker, a label employed by the Russian forces in Central Asia to slander the freedom fighters which they battled against. Russian defeat put a different complexion on Basmachi, however, and today the armies of Central Asia are proud of their heritage as guerillas."
+
+ central_asia_preparation: "Preparing our Citizens"
+ central_asia_preparation_desc: ""
+
+ KHI_bandit_kingdom: "Bandit Kingdom"
+ KHI_bandit_kingdom_desc: "Ambitious, opportunist, dangerous...these are all words which could describe Junaid Khan, the strongman who holds court in Khiva. Those who would disparage the Noble Commander point to his illiteracy and ignoble origins as proof that he is little more than an up-jumped bandit. No one would dare say such things to Junaid on the battlefield, however, and it is not some mistake that this brilliant warrior has survived thus far."
+
+ BUK_spirit_of_khans: "Legacy of the Khans"
+ BUK_spirit_of_khans_desc: "The Emirate of Bukhara is a remnant from an age of conquest and glory. While the Emir himself may be of Uzbek heritage, the blood of the Great Khans flows in the veins of Alim Khan. Why then, should the lion concern himself with the opinions of the lamb?"
+
+ TRK_popular_movement: "The Balancing Act"
+ TRK_popular_movement_desc: "The Provisional Government of Fergana draws its support from many different competing factions and groups. To maintain the peace, we are forced to cater to the whims of traditionalists and reformers, cities and tribes, and Russians and Turks. It is in this great balancing act that Turkestan finds both its greatest weaknesses and its most valuable strengths."
+
+ TRK_pan_turkism: "Pan-Turkism"
+ TRK_pan_turkism_desc: "Our republic was founded on principles of Pan-Turkism, the notion that the Turkic peoples must band together to survive and prosper."
+
+ ALO_land_of_wanderers: "Land of Wanderers"
+ ALO_land_of_wanderers_desc: "Our society is traditionally quite nomadic, consisting of wandering tribes migrating alongside their herds of livestock. In the last century though, the Russians have built up major cities, laid down railroads and settled many foreigners within our land, completely changing our way of life. We must now face the question of whether the Kazakhs shall adapt to the industrial, sedentary age, or try to stay true to our roots as nomads."
+ ALO_ethnic_tensions: "Ethnic Tensions"
+ ALO_ethnic_tensions_desc: "Almost every fifth citizen of the Alash Orda is a Russian settler, either descended from the first Russian colonists who came here centuries ago or they're part of the great wave of immigrants which were brought here in the early 1900s by Petr Stolypin. The discrepancy in influence between the minority Russians and majority Kazakhs has created heated ethnic conflicts, and even a form of segregation as most Kazakhs fled to the southern lands, away from Russian settlements in the north. As if that wasn’t bad enough, the settlers themselves are also frequently in conflict with other ethnic groups such as Cossacks and Uyghurs."
+ ALO_failed_education_reform: "Failed Educational Reform"
+ ALO_failed_education_reform_desc: "One of the primary concerns of the Alash Party is the education of our people, and attempts were made to comprehensively reform the schools in our lands throughout the 20's. Unfortunately, these attempts have largely failed, due in large part to the regional chaos which has long beset Central Asia. There are some within our government, however, who feel that a radical approach to reform is required, and that with the investment of resources the reaction of the Ulama and illiteracy of the tribes can finally be eradicated."
+ ALO_radical_education_reform: "Radical Educational Reform"
+ ALO_radical_education_reform_desc: "Nearly twenty years ago we attempted to reform our educational system along modern European and Ottoman lines, but ultimately failed. Our mistake was not in our goals, but in giving up our efforts before they could bear fruit. It is for this reason that we have begun a new radical education program, modelled after the recent progress found in Turkey."
+ ALO_alash_identity: "Alash Identity"
+ ALO_alash_identity_desc: "The word Alash comes from the Turkic word for tribesman or relative, and our government originally chose this name for our lands to signify our commitment to the cause of Turkic Brotherhood. While this initial plan to unify Central Asia did not survive Russian meddling, our dream lives on. We are not just a nation of Kazakhs, but rather the shining star of a new Turkic identity!"
+ ALO_revolutionary_liberalism: "Revolutionary Liberalism"
+ ALO_revolutionary_liberalism_desc: "Long have the leaders of the Alash Party looked to the rule of Mustafa Kemal Pasha, whose secular, modernist, and revolutionary principles have brought the great Ottoman Empire lurching into the 21st Century. To the men of our government, this radical agenda is exactly what the Alash Orda needs."
+ ALO_alash_militias: "Alash Militias"
+ ALO_alash_militias_desc: "During the Russian Revolution, the fathers of our nation formed bands of local militias, who defended our lands against the Soviets and aided the White Armies in their violent struggle. These defence committees did not simply disband at the close of the conflict, but instead our government organised them into a reserve army of farmer-soldiers, leaving only a small army of cavalry to respond to the chaos of the 20s. Once again, our nation is threatened by total conquest, and once again, we will need the services of our brave defenders."
+ ALO_centralised_command_0: "Centralised Command"
+ ALO_centralised_command_0_desc: "Our soldiers are led by a number of different tribal leaders, cossacks, warlords, and generals. Only by uniting these forces under one command, namely that of the experienced general and statesman Amanzholov Sadyk Ayukevich, can we hope to survive the onslaught."
+ ALO_centralised_command_1: "Military Rule"
+ ALO_centralised_command_1_desc: "The rule of poets, professors, and orators is fine when the goal of your government is negotiation and conciliation. Unfortunately, the time for talk has passed, and the time for action is now."
+ ALO_land_reform: "Land Reform Efforts"
+ ALO_land_reform_desc: "For decades, the traditional Kazakh homelands have been unequally distributed among its peoples. By redistributing property away from weathy landowners and predatory settlers, we will ensure stability, security, and prosperity."
+ ALO_economic_coordination_0: "Central Asian Economic Coordination"
+ ALO_economic_coordination_0_desc: "By better integrating our economy with our allies to the south, we have increased our ability to compete on the world stage."
+ ALO_economic_coordination_1: "Central Asian Economic Coordination"
+ ALO_economic_coordination_1_desc: "By better integrating our economy with our allies to the south, we have increased our ability to compete on the world stage."
+
+### Events ###
+ centralasiacommonintro: "The last two decades of Central Asian history have been marked by violent struggle and cutthroat politicking. Even before civil war reigned over the lands of their Russian masters, the peoples of the deserts, highlands, and fertile valleys of Central Asia struck out against the injustice of conscription into the great European war. As order broke down in the Russian heartland and Red turned against White, puppet leaders, rebel bandits, and nationalist intellectuals all saw an opportunity to play brother against brother to free themselves from Russian domination.\n\nHowever, these lands would not be insulated against the destruction of the Russian civil war, instead becoming a battle ground between Bolsheviks, Whites, and their proxies. In the end, the victory of the White Russians would lead to a period of new found autonomy, strengthened further by years of instability and strife in Moscow and St. Petersburg. Today, the Russian Bear again looks hungrily towards the south, greedily eying our lands and forgetful of the wounds we inflicted against her in the past.\n"
+
+ centralasia.101.t: "The Situation in Turkestan"
+ centralasia.101.d: "$centralasiacommonintro$\nThe Turkestan Republic, officially known as the Provisional Republic of the Fergana Valley, is land of contradictions. Its leader, the warlord-turned-statesman Madamin Bek, is strongly committed to the primacy of a civilian government, all while promoting a nascent cult of personality around his own enlightened rule. The Republic officially claims to defend and represent all Turks, even while forging pragmatic alliances with remnant Russian settlers and threading support between the various tribes and clans under its control.\n\nMadamin has proven himself to be a highly capable leader, having outmanoeuvred his allies and enemies in order to secure his control of the Fergana Valley. However, even if he brings all of his wits and resources to bear, the Republic stands little chance against the Russian menace."
+ centralasia.101.a: "It is better to die than compromise!"
+ centralasia.101.b: "Perhaps his is a battle not worth fighting?"
+
+ centralasia.102.t: "A Dark Night in Tashkent"
+ centralasia.102.d: "Madamin Bek fell into fitful bouts of sleep. There was oh so very much to do, and so little time to do it. He found himself suddenly in the hall of some great and distant king, atop a gilded throne. He was surrounded on all sides by warriors, clerics, and courtiers, each figure demanding his attention, his support, his favour. Suddenly, the voices died, a thousand calling birds replaced by a clamouring roar, which cried out:\n\n"There is no future for you here in Turkestan! Even if you survive, you will have no opportunity to truly unite your realm, to save your people. Leave now, or suffer the injustice of divine indifference! Heed my warning and despair!"\n\nMadamin fled the throne room deep into the desert, casting away his crown and instead taking up arms. It is simpler to live as a rebel than a king. Your enemies come at you with bayonets, rather than sickly sweet words. There was a realm where his countrymen still struggled to cast off the boots of the oppressor. Madamin found himself drawn to these brave martyrs in the East..."
+ centralasia.102.a: "Madamin Bek's mind drifts further and further into this dream..."
+ centralasia.102.b: "Ya Allah! What did I eat last night?"
+
+ centralasia.201.t: "The Situation in Khiva"
+ centralasia.201.d: "$centralasiacommonintro$\nAs the Basmachi began their revolt against Russian conscription, the Qungrat Khans, who have ruled the lands of the fertile Khorezm Valley since the dissolution of Genghis Khan's Empire, marched in lockstep with the Russian oppressor. In response, the influential Turkmen chief Junaid Khan rallied a number of Uzbek and Turkmen tribes around his military acumen, deposing the unpopular Isfandiyar Khan and replacing him with his young brother Said Abdullah. In the years following, Junaid further sidelined the Qungrats, centralising power around himself and securing the independence of the nominal Khanate through a series of brilliant victories over Russian expeditions.\n\nIn the years following the Revolution, the Russian Republic would repeatedly attempt to bring Junaid into the fold, but he was not interested in being yet another puppet, meeting bribery with insults and threats with violence. With an iron grip on his army, Junaid Khan rules over Khiva in a manner the old khans would envy. However, with the Russians once again moving in the north, will Junaid fare as the Qungrats once did, crushed by the might of Russian arms?"
+ centralasia.201.a: "It is better to die than compromise!"
+ centralasia.201.b: "Perhaps his is a battle not worth fighting?"
+
+ centralasia.202.t: "A Dark Night in Khiva"
+ centralasia.202.d: "Junaid Khan's dreams had been troubled as of late. He found himself standing before a monstrous golden gateway, flanked on either side by a chorus of robed and faceless figures. Out of the crowd stepped his father, Khojibay, whose visage matched his own in age, a mirror of his own insecurity. This apparition looked upon him dismissively, and he heard a voice boom forth from the open doorway:\n\n"You shall find no future in this land! Even if you triumph against your enemies, you will not find peace! Leave now, or suffer the injustice of divine indifference! Heed my warning and despair!"\n\nJunaid's mind began to turn, as if rejecting the scene before him. He envisioned beautiful domes and spires dominating a vibrant skyline. He was drawn to this distant land, desiring to see what secrets hid within its sprawling streets. Travel was not a luxury afforded to the Khan, and yet he could not help himself..."
+ centralasia.202.a: "Junaid Khan's mind drifts further and further into this dream..."
+ centralasia.202.b: "Ya Allah! What did I eat last night?"
+
+ centralasia.301.t: "The Situation in Bukhara"
+ centralasia.301.d: "$centralasiacommonintro$\nThe Emirate of Bukhara is a small realm, long ago carved away from the old Khans of Bukhara by a clan of Uzbek warlords called the Manghud, before being subjugated by the Imperial Russians, with the Manghud Emirs transformed into weak Russian puppets. During the civil war, the latest of the puppet despots, Sayid Alim Khan, cast his lot with White Russians and the Basmachi rebellion, while threading the needle of popular reform within his realm. While Alim Khan was an absolute despot at heart, he granted limited power to the liberal Young Bukharans, ensuring their loyalty while retaining true power in the monarchy.\n\nIn recent years, the Emir has begun to undo the reforms of the Revolution, further weakening the already toothless Majlis parliament by leaving the position of chief minister vacant and elevating his close ally, the Basmachi general Ibrahim Bek, to the symbolically significant role of Atalyk. While Alim Khan has nearly finished purging the liberal fifth-column within his fiefdom, only time will tell whether Bukhara can stand up against a Russian incursion."
+ centralasia.301.a: "It is better to die than compromise!"
+ centralasia.301.b: "Perhaps his is a battle not worth fighting?"
+
+ centralasia.302.t: "A Dark Night in Bukhara"
+ centralasia.302.d: "Mohammed Alim Khan tossed and turned under silken sheets. In his dreams, thousands of fists pounded on his bedroom door, the staccato drumbeat of a palace coup. From his window, a sea of voices called out at once:\n\n"This realm will not serve you with a life worth living! Even if you survive the hurricane from the north, you will stew in your boredom. Leave now, or suffer the injustice of divine indifference! Heed my warning and despair!"\n\nAs if spurred by a fear of his future, Alim's mind turned instead to the past. He found himself back in St. Petersburg, a crown prince excited for a future in service of the Tzar. He had been naive then, but happy too..."
+ centralasia.302.a: "Alim Khan's mind drifts further and further into this dream..."
+ centralasia.302.b: "Ya Allah! What did I eat last night?"
+
+ centralasia.401.t: "Bukeikhanov Passes the Torch"
+ centralasia.401.d: "No single man has done more for the Alash nation than Alikhan Bukeikhanov, the father of the Kazakh state. It was his leadership that maintained the unity of the Alash Party, and his relationship with Petrograd guaranteed our freedoms and saved us numerous attempts by Russian governors to meddle in our affairs.  Bukeikhanov is nearing seventy years old, however, and the last decades have taken a great toll upon his health. Therefore, with his final goal of complete freedom achieved, Bukeikhanov has announced that he is retiring as prime minister, endorsing his protégé and ally Alimkhan Yermekov to assume the position.\nSome wings of the party have begun quietly grumbling in response to this news, but with Bukeikhanov continuing to work in the background, most feel that Yermekov will perform admirably in this position. Of course, dissent within the Party is the least of his problems, as it is clear that it is merely a matter of when, not if, Russia when turn again towards the south."
+ centralasia.401.a: "Good luck, Alimkhan!"
+
+ centralasia.402.t: "The Kazakhs Propose Closer Coordination"
+ centralasia.402.d: "In a recent meeting in Pishkek, leading figures within the Alash Orda have proposed a more formal alliance against the Russian threat. They propose close economic and military coordination, and increasing trade between our nations. Unfortunately, some have loudly voiced their concerns over this proposal, mainly the more conservative members of the governing council and some tribal leaders, who feel that the Alash would compromise our independence.\nAt the same time, we are all Turks, and if the great Turkic national project is to succeed, we will have to make sacrifices in the name of survival."
+ centralasia.402.a: "Of course, together we will stand strong!"
+ centralasia.402.b: "We must defer to the dissenters, lest they dispose of us."
+
+ centralasia.403.t: "Turkestan Agrees to Increased Cooperation!"
+ centralasia.403.d: "In a recent meeting between our diplomats, it was proposed that the two Turkic Republics would benefit from a closer relationship. Having brought these proposals to Turkestan's leader Madamin Bek, it appears that he has agreed! Already, specific treaties are being drafted to bring our two nations closer together!"
+ centralasia.403.a: "A toast to our Turkic brothers!"
+
+ centralasia.404.t: "Turkestan Rejects Proposed Cooperation!"
+ centralasia.404.d: "In a recent meeting between our diplomats, it was proposed that the two Turkic Republics would benefit from a closer relationship. Unfortunately, Turkestan's leader Madamin Bek rejected these proposals, claiming that they threatened to undermine his realm's autonomy and sovereignty. Our diplomatic back-channels suggest a different reason for his rejection, however, as word in Fergana is that some of Madamin's warlords indicated that they would rather see him diposed than take orders from Kazakh generals."
+ centralasia.404.a: "A shame."
+
+ ### Leader Traits ###
+
+ ALO_father_of_the_militias: "Father of the Militias"
+ ALO_idealistic_poet: "Idealistic Poet"
+ ALO_weary_peacemaker: "Weary Peacemaker"
+ ALO_charismatic_protege: "Charismatic Protege"
+
+ BUK_tenacious_autocrat: "Tenacious Autocrat"
+ BUK_the_peoples_poet: "The People's Poet"
+ BUK_aloof_ideologue: "Aloof Ideologue"
+
+ KHI_shrewd_strongman_1: "Shrewd Strongman"
+ KHI_shrewd_strongman_2: "Shrewd Strongman"
+ KHI_student_activist: "Student Activist"
+
+ TRK_pragmatic_mediator: "Pragmatic Mediator"
+ TRK_unbiased_moderate: "Unbiased Moderate"
+ TRK_pan_turkic_revolutionary: "Pan-Turkic Revolutionary"
+
