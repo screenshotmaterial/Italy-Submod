@@ -1,0 +1,920 @@
+################################
+### Central Asian Focus Tree ###
+### by JazzyHugh             ###
+################################
+
+focus_tree = {
+	id = central_asia_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				original_tag = BUK
+				original_tag = TRK
+				original_tag = KHI
+			}
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 2050 y = 1400 }
+
+	### Shared economic branch ###
+	focus = {
+		id = central_asia_russian_bear_awakens
+		icon = GFX_goal_national_populism
+		cost = 4
+		x = 6
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_russian_bear_awakens"
+			swap_ideas = {
+				remove_idea = central_asia_guerilla_army_1
+				add_idea = central_asia_guerilla_army_2
+			}
+		}
+	}
+	focus = {
+		id = central_asia_develop_the_land
+		icon = GFX_focus_AUS_agriculture
+		cost = 6
+		prerequisite = {
+			focus = central_asia_russian_bear_awakens
+		}
+		x = -2
+		y = 1
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_develop_the_land"
+			add_tech_bonus = {
+				name = central_asia_develop_the_land
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = central_asia_underdeveloped_industry_1
+				add_idea = central_asia_underdeveloped_industry_2
+			}
+		}
+	}
+	focus = {
+		id = central_asia_focus_on_cities
+		icon = GFX_goal_workers_for_business
+		cost = 5
+		prerequisite = {
+			focus = central_asia_develop_the_land
+		}
+		x = -1
+		y = 2
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_focus_on_cities"
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			if = { #has subjects
+				limit = { has_idea = central_asia_underdeveloped_industry_3 }
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_3
+					add_idea = central_asia_underdeveloped_industry_7
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_2
+					add_idea = central_asia_underdeveloped_industry_4
+				}
+			}
+		}
+	}
+	focus = {
+		id = central_asia_stretch_our_resources
+		icon = GFX_goal_army_guy_2
+		cost = 5
+		prerequisite = {
+			focus = central_asia_develop_the_land
+		}
+		available = {
+			has_war_support > 0.35
+		}
+		x = -3
+		y = 2
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_stretch_our_resources"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+			}
+			if = { #has subjects
+				limit = { has_idea = central_asia_underdeveloped_industry_4 }
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_4
+					add_idea = central_asia_underdeveloped_industry_7
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_2
+					add_idea = central_asia_underdeveloped_industry_3
+				}
+			}
+		}
+	}
+	focus = {
+		id = central_asia_open_the_arsenals
+		icon = GFX_goal_generic_army_artillery
+		cost = 7
+		prerequisite = {
+			focus = central_asia_develop_the_land
+		}
+		available = {
+			has_war_support > 0.7
+		}
+		x = -2
+		y = 3
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_open_the_arsenals"
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			if = { #has sor
+				limit = { has_idea = central_asia_underdeveloped_industry_3 }
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_3
+					add_idea = central_asia_underdeveloped_industry_6
+				}
+			}
+			else_if = { #has foc
+				limit = { has_idea = central_asia_underdeveloped_industry_4 }
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_4
+					add_idea = central_asia_underdeveloped_industry_5
+				}
+			}
+			else_if = { #has neither
+				limit = { has_idea = central_asia_underdeveloped_industry_2 }
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_2
+					add_idea = central_asia_underdeveloped_industry_8
+				}
+			}
+			else = { #has both
+				swap_ideas = {
+					remove_idea = central_asia_underdeveloped_industry_7
+					add_idea = central_asia_underdeveloped_industry_9
+				}
+			}
+		}
+	}
+
+	### Shared military branch ###
+	focus = {
+		id = central_asia_reform_the_resistance
+		icon = GFX_EGY_Palestine_Defence
+		cost = 5
+		prerequisite = {
+			focus = central_asia_russian_bear_awakens
+		}
+		x = 2
+		y = 1
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_reform_the_resistance"
+			swap_ideas = {
+				remove_idea = central_asia_guerilla_army_2
+				add_idea = central_asia_guerilla_army_3
+			}
+		}
+	}
+	focus = {
+		id = central_asia_rouse_the_people
+		icon = GFX_goal_generic_propaganda
+		cost = 6
+		prerequisite = {
+			focus = central_asia_reform_the_resistance
+		}
+		x = 1
+		y = 2
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_rouse_the_people"
+			add_war_support = 0.05
+			add_ideas = central_asia_preparation_1
+		}
+	}
+	focus = {
+		id = central_asia_expand_conscription
+		icon = GFX_goal_mass_concentration_of_army
+		cost = 6
+		prerequisite = {
+			focus = central_asia_focus_on_cities
+		}
+		prerequisite = {
+			focus = central_asia_rouse_the_people
+		}
+		available = {
+			has_war_support > 0.35
+		}
+		x = 0
+		y = 3
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_expand_conscription"
+			add_manpower = 500
+			increase_conscription = yes
+		}
+	}
+	focus = {
+		id = central_asia_study_the_first_war_of_liberation
+		icon = GFX_goal_liberty
+		cost = 5
+		prerequisite = {
+			focus = central_asia_reform_the_resistance
+		}
+		available = {
+			has_war_support > 0.35
+		}
+		x = 2
+		y = 3
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_study_the_first_war_of_liberation"
+			add_doctrine_cost_reduction = {
+				name = central_asia_study_the_first_war_of_liberation
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = central_asia_guerilla_army_3
+				add_idea = central_asia_guerilla_army_4
+			}
+		}
+	}
+	focus = {
+		id = central_asia_drill_our_soldiers
+		icon = GFX_focus_chi_army_reform
+		cost = 6
+		prerequisite = {
+			focus = central_asia_expand_conscription
+		}
+		prerequisite = {
+			focus = central_asia_study_the_first_war_of_liberation
+		}
+		available = {
+			has_war_support > 0.7
+		}
+		x = 1
+		y = 4
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_drill_our_soldiers"
+			army_experience = 25
+			swap_ideas = {
+				remove_idea = central_asia_guerilla_army_4
+				add_idea = central_asia_guerilla_army_5
+			}
+			swap_ideas = {
+				remove_idea = central_asia_preparation_1
+				add_idea = central_asia_preparation_2
+			}
+		}
+	}
+	focus = {
+		id = central_asia_secure_the_homefront
+		icon = GFX_goal_secret_agents
+		cost = 6
+		prerequisite = {
+			focus = central_asia_study_the_first_war_of_liberation
+		}
+		available = {
+			has_war_support > 0.7
+		}
+		x = 3
+		y = 4
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_secure_the_homefront"
+			add_stability = 0.1
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = central_asia_war_for_survival
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 8
+		prerequisite = {
+			focus = central_asia_drill_our_soldiers
+		}
+		prerequisite = {
+			focus = central_asia_secure_the_homefront
+		}
+		available = {
+			OR = {
+				has_war_with = RUS
+				has_war_with = SOV
+				has_war_support > 0.9
+			}
+		}
+		x = 2
+		y = 5
+		relative_position_id = central_asia_russian_bear_awakens
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus central_asia_war_for_survival"
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = central_asia_war_for_survival
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = central_asia_guerilla_army_5
+				add_idea = central_asia_guerilla_army_6
+			}
+		}
+	}
+
+	### Turkestan branch ###
+	focus = {
+		id = TRK_unite_moderate_factions
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		allow_branch = {
+			original_tag = TRK
+		}
+		x = 11
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRK_unite_moderate_factions"
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = TRK_popular_movement_0
+				add_idea = TRK_popular_movement_1
+			}
+		}
+	}
+	focus = {
+		id = TRK_standardize_our_equipment
+		icon = GFX_focus_generic_military_equipment
+		cost = 6
+		prerequisite = {
+			focus = TRK_unite_moderate_factions
+		}
+		available = {
+			has_war_support > 0.15
+		}
+		x = 1
+		y = 1
+		relative_position_id = TRK_unite_moderate_factions
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRK_standardize_our_equipment"
+			army_experience = 15
+			add_tech_bonus = {
+				name = TRK_standardize_our_equipment
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = TRK_embrace_pan_turkism
+		icon = GFX_goal_TRK_army
+		cost = 6
+		prerequisite = {
+			focus = TRK_unite_moderate_factions
+		}
+		available = {
+			has_war_support > 0.15
+		}
+		x = -1
+		y = 1
+		relative_position_id = TRK_unite_moderate_factions
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRK_embrace_pan_turkism"
+			add_war_support = 0.05
+			add_ideas = TRK_pan_turkism_1
+		}
+	}
+	focus = {
+		id = TRK_our_ottoman_brothers
+		icon = GFX_goal_OTT_Military_Mission
+		cost = 6
+		prerequisite = {
+			focus = TRK_embrace_pan_turkism
+		}
+		available = {
+			has_war_support > 0.3
+		}
+		x = -2
+		y = 2
+		relative_position_id = TRK_unite_moderate_factions
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRK_our_ottoman_brothers"
+			custom_effect_tooltip = CA_theorist_tooltip
+			swap_ideas = {
+				remove_idea = TRK_pan_turkism_1
+				add_idea = TRK_pan_turkism_2
+			}
+			add_doctrine_cost_reduction = {
+				name = BUK_recall_mission_to_kostantiniyye
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = TRK_enlist_the_jadid
+		icon = GFX_goal_collaborate_local_elites
+		cost = 6
+		prerequisite = {
+			focus = TRK_embrace_pan_turkism
+		}
+		available = {
+			has_war_support > 0.3
+		}
+		x = 0
+		y = 2
+		relative_position_id = TRK_unite_moderate_factions
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRK_enlist_the_jadid"
+			custom_effect_tooltip = CA_political_advisor_tooltip
+			add_tech_bonus = {
+				name = TRK_enlist_the_jadid
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = TRK_popular_movement_1
+				add_idea = TRK_popular_movement_2
+			}
+		}
+	}
+	focus = {
+		id = TRK_settling_the_settler_conflict
+		icon = GFX_goal_manage_industries
+		cost = 6
+		prerequisite = {
+			focus = TRK_our_ottoman_brothers
+		}
+		prerequisite = {
+			focus = TRK_enlist_the_jadid
+		}
+		available = {
+			has_war_support > 0.6
+		}
+		x = -1
+		y = 3
+		relative_position_id = TRK_unite_moderate_factions
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TRK_settling_the_settler_conflict"
+			custom_effect_tooltip = CA_political_advisor_tooltip
+			add_political_power = 50
+			add_tech_bonus = {
+				name = TRK_settling_the_settler_conflict
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = TRK_popular_movement_2
+				add_idea = TRK_popular_movement_3
+			}
+		}
+	}
+
+	### Khiva branch ###
+	focus = {
+		id = KHI_one_khanate_two_khans
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 5
+		allow_branch = {
+			original_tag = KHI
+		}
+		x = 11
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus KHI_one_khanate_two_khans"
+			custom_effect_tooltip = CA_political_advisor_tooltip
+			add_war_support = 0.05
+			effect_tooltip = {
+				swap_ruler_traits = { remove = KHI_shrewd_strongman_1 add = KHI_shrewd_strongman_2 }
+			}
+			hidden_effect = {
+				KHI_junaid_khan = {
+					swap_country_leader_traits = { remove = KHI_shrewd_strongman_1 add = KHI_shrewd_strongman_2 ideology = authoritarian_democrat_subtype }
+					swap_country_leader_traits = { remove = KHI_shrewd_strongman_1 add = KHI_shrewd_strongman_2 ideology = paternal_autocrat_subtype }
+					swap_country_leader_traits = { remove = KHI_shrewd_strongman_1 add = KHI_shrewd_strongman_2 ideology = national_populist_subtype }
+				}
+			}
+		}
+	}
+	focus = {
+		id = KHI_unite_the_tribes
+		icon = GFX_goal_KHI_airforce
+		cost = 5
+		allow_branch = {
+			original_tag = KHI
+		}
+		prerequisite = {
+			focus = KHI_one_khanate_two_khans
+		}
+		available = {
+			has_war_support > 0.15
+		}
+		x = -1
+		y = 1
+		relative_position_id = KHI_one_khanate_two_khans
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus KHI_unite_the_tribes"
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = KHI_bandit_kingdom_0
+				add_idea = KHI_bandit_kingdom_1
+			}
+		}
+	}
+	focus = {
+		id = KHI_reinforce_khiva
+		icon = GFX_goal_generic_seize_railway
+		cost = 6
+		prerequisite = {
+			focus = KHI_one_khanate_two_khans
+		}
+		available = {
+			has_war_support > 0.15
+		}
+		x = 1
+		y = 1
+		relative_position_id = KHI_one_khanate_two_khans
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus KHI_reinforce_khiva"
+			861 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 12465
+				}
+			}
+			584 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1649
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 7924 1649 12465 }
+			}
+		}
+	}
+	focus = {
+		id = KHI_attract_adventurers_and_exiles
+		icon = GFX_goal_conspiracy
+		cost = 5
+		allow_branch = {
+			original_tag = KHI
+		}
+		prerequisite = {
+			focus = KHI_unite_the_tribes
+		}
+		available = {
+			has_war_support > 0.3
+		}
+		x = -2
+		y = 2
+		relative_position_id = KHI_one_khanate_two_khans
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus KHI_attract_adventurers_and_exiles"
+			custom_effect_tooltip = CA_theorist_tooltip
+			army_experience = 25
+			swap_ideas = {
+				remove_idea = KHI_bandit_kingdom_1
+				add_idea = KHI_bandit_kingdom_2
+			}
+		}
+	}
+	focus = {
+		id = KHI_caspian_gunrunners
+		icon = GFX_goal_SWI_international_aid
+		cost = 6
+		prerequisite = {
+			focus = KHI_unite_the_tribes
+		}
+		available = {
+			has_war_support > 0.3
+		}
+		x = 0
+		y = 2
+		relative_position_id = KHI_one_khanate_two_khans
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus KHI_caspian_gunrunners"
+			add_political_power = -50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = GER
+			}
+		}
+	}
+	focus = {
+		id = KHI_junaids_horsemen
+		icon = GFX_goal_KHI_army
+		cost = 6
+		prerequisite = {
+			focus = KHI_attract_adventurers_and_exiles
+		}
+		prerequisite = {
+			focus = KHI_caspian_gunrunners
+		}
+		available = {
+			has_war_support > 0.6
+		}
+		x = -1
+		y = 3
+		relative_position_id = KHI_one_khanate_two_khans
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus KHI_junaids_horsemen"
+			swap_ideas = {
+				remove_idea = KHI_bandit_kingdom_2
+				add_idea = KHI_bandit_kingdom_3
+			}
+		}
+	}
+
+	### Bukhara branch ###
+	focus = {
+		id = BUK_recall_mission_to_kostantiniyye
+		icon = GFX_goal_OTT_army_command
+		cost = 5
+		allow_branch = {
+			original_tag = BUK
+		}
+		x = 11
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BUK_recall_mission_to_kostantiniyye"
+			custom_effect_tooltip = CA_theorist_tooltip
+			swap_ideas = {
+				remove_idea = BUK_spirit_of_khans_0
+				add_idea = BUK_spirit_of_khans_1
+			}
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = BUK_recall_mission_to_kostantiniyye
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BUK_contacts_in_afghanistan
+		icon = GFX_goal_afghanistan
+		cost = 6
+		prerequisite = {
+			focus = BUK_recall_mission_to_kostantiniyye
+		}
+		available = {
+			has_war_support > 0.15
+		}
+		x = 1
+		y = 1
+		relative_position_id = BUK_recall_mission_to_kostantiniyye
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BUK_contacts_in_afghanistan"
+			add_political_power = 25
+			add_manpower = 500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+				producer = AFG
+			}
+		}
+	}
+	focus = {
+		id = BUK_honour_the_ulama
+		icon = GFX_goal_islamic_government
+		cost = 5
+		allow_branch = {
+			original_tag = BUK
+		}
+		prerequisite = {
+			focus = BUK_recall_mission_to_kostantiniyye
+		}
+		available = {
+			has_war_support > 0.15
+		}
+		x = -1
+		y = 1
+		relative_position_id = BUK_recall_mission_to_kostantiniyye
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BUK_honour_the_ulama"
+			swap_ideas = {
+				remove_idea = BUK_spirit_of_khans_1
+				add_idea = BUK_spirit_of_khans_2
+			}
+			add_popularity = {
+				ideology = paternal_autocrat popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = BUK_the_emirs_right_hand
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 6
+		prerequisite = {
+			focus = BUK_honour_the_ulama
+		}
+		available = {
+			has_war_support > 0.3
+		}
+		x = 0
+		y = 2
+		relative_position_id = BUK_recall_mission_to_kostantiniyye
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BUK_the_emirs_right_hand"
+			swap_ideas = {
+				remove_idea = BUK_spirit_of_khans_2
+				add_idea = BUK_spirit_of_khans_3
+			}
+			BUK_ibrahim_bek = {
+				add_trait = { trait = organizer }
+			}
+			add_popularity = {
+				ideology = paternal_autocrat popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = BUK_expand_the_ark
+		icon = GFX_goal_BUK_army
+		cost = 6
+		prerequisite = {
+			focus = BUK_honour_the_ulama
+		}
+		available = {
+			has_war_support > 0.3
+		}
+		x = -2
+		y = 2
+		relative_position_id = BUK_recall_mission_to_kostantiniyye
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BUK_expand_the_ark"
+			405 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9605
+				}
+			}
+			add_popularity = {
+				ideology = paternal_autocrat popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = BUK_purge_reformers
+		icon = GFX_goal_generic_imprison_people
+		cost = 6
+		prerequisite = {
+			focus = BUK_the_emirs_right_hand
+		}
+		prerequisite = {
+			focus = BUK_expand_the_ark
+		}
+		available = {
+			has_war_support > 0.6
+		}
+		x = -1
+		y = 3
+		relative_position_id = BUK_recall_mission_to_kostantiniyye
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BUK_purge_reformers"
+			custom_effect_tooltip = CA_political_advisor_tooltip
+			swap_ideas = {
+				remove_idea = BUK_spirit_of_khans_3
+				add_idea = BUK_spirit_of_khans_4
+			}
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = paternal_autocrat popularity = 0.20
+			}
+		}
+	}
+}

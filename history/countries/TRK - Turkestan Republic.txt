@@ -1,7 +1,7 @@
 ﻿capital = 407
 set_stability = 0.3
 set_war_support = 0.15
-set_research_slots = 2
+set_research_slots = 1
 oob = "TRK"
 
 set_technology = {
@@ -21,22 +21,46 @@ set_politics = {
 
 set_popularities = {
 	totalist = 0
-	radical_socialist = 0
-	syndicalist = 2
+	radical_socialist = 7
+	syndicalist = 1
 	social_democrat = 4
-	social_liberal = 6
-	market_liberal = 8
-	social_conservative = 12
-	authoritarian_democrat = 41
-	paternal_autocrat = 19
-	national_populist = 8
+	social_liberal = 7
+	market_liberal = 12
+	social_conservative = 13
+	authoritarian_democrat = 47
+	paternal_autocrat = 5
+	national_populist = 4
+}
+
+country_event = { id = centralasia.101 days = 1 } #Intro event
+
+add_ideas = {
+	central_asia_underdeveloped_industry_1
+	central_asia_guerilla_army_1
+	TRK_popular_movement_0
 }
 
 recruit_character = TRK_turar_ryskulov
 recruit_character = TRK_mustafa_shokay
 recruit_character = TRK_madamin_bek
 
+recruit_character = TRK_konstantin_monstrov
+recruit_character = TRK_khal_khodzha
+recruit_character = TRK_abdulla_qodiriy
+recruit_character = TRK_nazir_tyuryakulov
+recruit_character = TRK_torekul_aitmatov
+
+recruit_character = TRK_munawwar_qari_abdurrashidkhan
+recruit_character = TRK_arif_alimov
+
+recruit_character = TRK_akif_pasha
+recruit_character = TRK_musa_jalil
+recruit_character = TRK_ismailbek_taranchiev
+recruit_character = TRK_akhmedzhan_shukurov
+
 ### Generals ###
 recruit_character = TRK_kurshirmat
 recruit_character = TRK_muetdin_bek
 recruit_character = TRK_katta_ergash
+
+activate_advisor = TRK_katta_ergash

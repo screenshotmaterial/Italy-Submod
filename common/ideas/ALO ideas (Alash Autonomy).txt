@@ -1,0 +1,320 @@
+####################
+### Alash Ideas  ###
+### by JazzyHugh ###
+####################
+
+ideas = {
+	country = {
+
+		ALO_land_of_wanderers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_land_of_wanderers" }
+			picture = MON_ger
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ALO_ethnic_tensions_0 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_ethnic_tensions_0" }
+			name = ALO_ethnic_tensions
+			picture = japanese_aid_cut
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.15
+				army_org_factor = -0.15
+			}
+		}
+
+		ALO_ethnic_tensions_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_ethnic_tensions_1" }
+			name = ALO_ethnic_tensions
+			picture = japanese_aid_cut
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.1
+				army_org_factor = -0.1
+			}
+		}
+
+		ALO_ethnic_tensions_dem_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_ethnic_tensions_dem_2" }
+			name = ALO_ethnic_tensions
+			picture = japanese_aid_cut
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.1
+				army_org_factor = -0.1
+			}
+		}
+
+		ALO_ethnic_tensions_dem_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_ethnic_tensions_dem_3" }
+			name = ALO_ethnic_tensions
+			picture = japanese_aid_cut
+			allowed = { always = no }
+			modifier = {
+				conscription_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+
+		ALO_ethnic_tensions_auth_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_ethnic_tensions_auth_2" }
+			name = ALO_ethnic_tensions
+			picture = japanese_aid_cut
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.25
+				conscription_factor = -0.1
+				army_org_factor = -0.1
+			}
+		}
+
+		ALO_ethnic_tensions_auth_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_ethnic_tensions_auth_3" }
+			name = ALO_ethnic_tensions
+			picture = japanese_aid_cut
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.25
+				conscription_factor = -0.2
+			}
+		}
+
+		ALO_failed_education_reform = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_failed_education_reform" }
+			picture = OTT_Technical_Illiteracy
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+		ALO_radical_education_reform_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_radical_education_reform_1" }
+			name = ALO_radical_education_reform
+			picture = OTT_solid_idea
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = -0.1
+				research_speed_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+
+		ALO_radical_education_reform_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_radical_education_reform_2" }
+			name = ALO_radical_education_reform
+			picture = OTT_solid_idea
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				research_speed_factor = 0.05
+			}
+		}
+
+		ALO_alash_identity_0 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_alash_identity_0" }
+			name = ALO_alash_identity
+			picture = JBS_Urban_Nobility_Faction
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		ALO_alash_identity_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_alash_identity_1" }
+			name = ALO_alash_identity
+			picture = JBS_Urban_Nobility_Faction
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+
+		ALO_alash_identity_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_alash_identity_2" }
+			name = ALO_alash_identity
+			picture = JBS_Urban_Nobility_Faction
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.15
+				army_morale_factor = 0.1
+				political_advisor_cost_factor = -0.25
+			}
+		}
+
+		ALO_revolutionary_liberalism_0 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_revolutionary_liberalism_0" }
+			name = ALO_revolutionary_liberalism
+			picture = generic_trade
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		ALO_revolutionary_liberalism_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_revolutionary_liberalism_1" }
+			name = ALO_revolutionary_liberalism
+			picture = generic_trade
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		ALO_land_reform_0 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_land_reform_0" }
+			name = ALO_land_reform
+			picture = RUS_land_reforms
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.3
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		ALO_land_reform_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_land_reform_1" }
+			name = ALO_land_reform
+			picture = RUS_land_reforms
+			allowed = { always = no }
+			modifier = {
+				monthly_population = 0.3
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		ALO_economic_coordination_0 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_economic_coordination_0" }
+			name = ALO_economic_coordination_0
+			picture = generic_trade
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		ALO_economic_coordination_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_economic_coordination_1" }
+			name = ALO_economic_coordination_1
+			picture = generic_trade
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		ALO_alash_militias_0 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_alash_militias_0" }
+			name = ALO_alash_militias
+			picture = selective_training_act
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.005
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		ALO_alash_militias_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_alash_militias_1" }
+			name = ALO_alash_militias
+			picture = selective_training_act
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.01
+				supply_consumption_factor = -0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		ALO_alash_militias_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_alash_militias_2" }
+			name = ALO_alash_militias
+			picture = selective_training_act
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.01
+				supply_consumption_factor = -0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		ALO_alash_militias_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_alash_militias_3" }
+			name = ALO_alash_militias
+			picture = selective_training_act
+			allowed = { always = no }
+			modifier = {
+				conscription = 0.01
+				supply_consumption_factor = -0.1
+				army_core_defence_factor = 0.1
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+			}
+		}
+
+		ALO_centralised_command_0 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_centralised_command_0" }
+			picture = generic_officer
+			allowed = { always = no }
+			modifier = {
+				command_power_gain = 0.25
+				planning_speed = 0.2
+			}
+		}
+
+		ALO_centralised_command_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_centralised_command_1" }
+			picture = generic_officer
+			allowed = { always = no }
+			modifier = {
+				experience_gain_army = 0.1
+				command_power_gain = 0.25
+				planning_speed = 0.2
+				army_chief_cost_factor = -0.25
+				high_command_cost_factor = -0.25
+			}
+		}
+
+		ALO_centralised_command_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ALO_centralised_command_2" }
+			name = ALO_centralised_command_1
+			picture = generic_officer
+			allowed = { always = no }
+			modifier = {
+				experience_gain_army = 0.1
+				command_power_gain = 0.25
+				planning_speed = 0.2
+				dig_in_speed_factor = 0.15
+				max_dig_in_factor = 0.15
+				army_chief_cost_factor = -0.25
+				high_command_cost_factor = -0.25
+				surrender_limit = 0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,697 @@
+########################
+### Alash Focus Tree ###
+### by JazzyHugh     ###
+########################
+
+focus_tree = {
+	id = alash_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALO
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2400 y = 800 }
+
+	focus = {
+		id = ALO_independence_at_last
+		icon = GFX_goal_Fight_for_Freedom
+		x = 6
+		y = 0
+		cost = 3
+		available = {
+			NOT = { is_subject_of = RUS }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_independence_at_last"
+			add_political_power = 50
+			add_ideas = ALO_alash_identity_0
+			country_event = {
+				id = centralasia.401
+				days = 35
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_the_alash_platform
+		icon = GFX_goal_ideology_social_conservative
+		x = -3
+		y = 1
+		cost = 8
+		prerequisite = {
+			focus = ALO_independence_at_last
+		}
+		available = {
+			has_government = market_liberal
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_the_alash_platform"
+			add_popularity = {
+				ideology = market_liberal popularity = 0.05
+			}
+			set_temp_variable = { coalition_partner_var = token:social_liberal }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:social_conservative }
+			add_to_coalition = yes
+			set_temp_variable = { coalition_partner_var = token:authoritarian_democrat }
+			add_to_coalition = yes
+
+		}
+	}
+
+	focus = {
+		id = ALO_kemalist_principles
+		icon = GFX_goal_OTT_Abolish_Mecelle
+		x = -4
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = ALO_the_alash_platform
+		}
+		available = {
+			has_government = market_liberal
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_kemalist_principles"
+			add_ideas = ALO_revolutionary_liberalism_0
+			swap_ideas = {
+				remove_idea = ALO_failed_education_reform
+				add_idea = ALO_radical_education_reform_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_overcoming_our_deficits
+		icon = GFX_goal_production
+		x = -2
+		y = 2
+		cost = 8
+		prerequisite = {
+			focus = ALO_the_alash_platform
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_overcoming_our_deficits"
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_tech_bonus = {
+				name = ALO_overcoming_our_deficits
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_rally_the_people
+		icon = GFX_goal_mass_concentration_of_army
+		x = -1
+		y = 3
+		cost = 6
+		prerequisite = {
+			focus = ALO_overcoming_our_deficits
+			focus = ALO_formalise_the_militias
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_rally_the_people"
+			increase_conscription = yes
+			swap_ideas = {
+				remove_idea = ALO_ethnic_tensions_0
+				add_idea = ALO_ethnic_tensions_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_face_to_the_west
+		icon = GFX_goal_OTT_Restrict_Foreign_Exchange_Regime
+		x = -5
+		y = 3
+		cost = 6
+		prerequisite = {
+			focus = ALO_kemalist_principles
+		}
+		available = {
+			has_government = market_liberal
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_face_to_the_west"
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			swap_ideas = {
+				remove_idea = ALO_revolutionary_liberalism_0
+				add_idea = ALO_revolutionary_liberalism_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_secular_education
+		icon = GFX_goal_KTG_Educate_natives
+		x = -3
+		y = 3
+		cost = 8
+		prerequisite = {
+			focus = ALO_kemalist_principles
+		}
+		prerequisite = {
+			focus = ALO_overcoming_our_deficits
+		}
+		available = {
+			has_government = market_liberal
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_secular_education"
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.05
+			}
+			swap_ideas = {
+				remove_idea = ALO_radical_education_reform_1
+				add_idea = ALO_radical_education_reform_2
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_national_identity
+		icon = GFX_goal_conspiracy
+		x = -4
+		y = 4
+		cost = 6
+		prerequisite = {
+			focus = ALO_secular_education
+		}
+		available = {
+			has_government = market_liberal
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_national_identity"
+			swap_ideas = {
+				remove_idea = ALO_alash_identity_0
+				add_idea = ALO_alash_identity_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_gradual_land_reform
+		icon = GFX_goal_agricultural_policies
+		x = -2
+		y = 4
+		cost = 8
+		prerequisite = {
+			focus = ALO_rally_the_people
+		}
+		mutually_exclusive = {
+			focus = ALO_radical_land_reform
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_gradual_land_reform"
+			add_ideas = ALO_land_reform_0
+			swap_ideas = {
+				remove_idea = ALO_ethnic_tensions_1
+				add_idea = ALO_ethnic_tensions_dem_2
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_grant_basic_worker_rights
+		icon = GFX_goal_workers_rights
+		x = -3
+		y = 5
+		cost = 6
+		prerequisite = {
+			focus = ALO_gradual_land_reform
+		}
+		available = {
+			has_government = market_liberal
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_grant_basic_worker_rights"
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.07
+			}
+			swap_ideas = {
+				remove_idea = ALO_land_reform_0
+				add_idea = ALO_land_reform_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_radical_land_reform
+		icon = GFX_goal_OTT_Land_Reform
+		x = 0
+		y = 4
+		cost = 8
+		prerequisite = {
+			focus = ALO_rally_the_people
+		}
+		mutually_exclusive = {
+			focus = ALO_gradual_land_reform
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_radical_land_reform"
+			406 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			590 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = ALO_land_reform_0
+			swap_ideas = {
+				remove_idea = ALO_ethnic_tensions_1
+				add_idea = ALO_ethnic_tensions_auth_2
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_republic_of_equals
+		icon = GFX_goal_DOM_End_Judicial_Corruption
+		x = -4
+		y = 6
+		cost = 8
+		prerequisite = {
+			focus = ALO_national_identity
+		}
+		prerequisite = {
+			focus = ALO_grant_basic_worker_rights
+		}
+		available = {
+			has_government = market_liberal
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_republic_of_equals"
+			swap_ideas = {
+				remove_idea = ALO_alash_identity_1
+				add_idea = ALO_alash_identity_2
+			}
+			swap_ideas = {
+				remove_idea = ALO_ethnic_tensions_dem_2
+				add_idea = ALO_ethnic_tensions_dem_3
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_surviving_the_onslaught
+		icon = GFX_EGY_Palestine_Defence
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = {
+			focus = ALO_independence_at_last
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_surviving_the_onslaught"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = TUR
+			}
+			swap_ideas = {
+				remove_idea = ALO_alash_militias_0
+				add_idea = ALO_alash_militias_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_formalise_the_militias
+		icon = GFX_goal_ALO_army
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = ALO_surviving_the_onslaught
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_formalise_the_militias"
+			add_manpower = 2500
+			swap_ideas = {
+				remove_idea = ALO_alash_militias_1
+				add_idea = ALO_alash_militias_2
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_pan_turkish_coordination
+		icon = GFX_goal_OTT_Muslim_Solidarity
+		x = 3
+		y = 1
+		cost = 6
+		prerequisite = {
+			focus = ALO_independence_at_last
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_pan_turkish_coordination"
+			add_manpower = 750
+			TRK = {
+				country_event = {
+					id = centralasia.402
+					days = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_inspect_the_ottoman_inspectorate
+		icon = GFX_goal_OTT_army
+		x = 2
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = ALO_pan_turkish_coordination
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_inspect_the_ottoman_inspectorate"
+			army_experience = 35
+			add_doctrine_cost_reduction = {
+				name = ALO_inspect_the_ottoman_inspectorate
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = ALO_inspect_the_ottoman_inspectorate
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_expand_caspian_sea_ports
+		icon = GFX_goal_generic_shipyard
+		x = 3
+		y = 3
+		cost = 8
+		prerequisite = {
+			focus = ALO_pan_turkish_coordination
+		}
+		available = {
+			has_war = no
+			587 = { is_owned_and_controlled_by = ROOT }
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_expand_caspian_sea_ports"
+			587 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 11701
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_tashkent_to_verniy_line
+		icon = GFX_goal_generic_railroad
+		x = 4
+		y = 2
+		cost = 8
+		prerequisite = {
+			focus = ALO_pan_turkish_coordination
+		}
+		available = {
+			has_war = no
+			has_idea = ALO_economic_coordination_0
+			407 = { is_owned_and_controlled_by = TRK }
+			589 = { is_owned_and_controlled_by = ROOT }
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_tashkent_to_verniy_line"
+			build_railway = {
+				level = 1
+				path = { 4686 12640 7706 12583 4224 1591 }
+			}
+			swap_ideas = {
+				remove_idea = ALO_economic_coordination_0
+				add_idea = ALO_economic_coordination_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_unite_the_commands
+		icon = GFX_focus_generic_military_mission
+		x = 1
+		y = 3
+		cost = 8
+		prerequisite = {
+			focus = ALO_formalise_the_militias
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_unite_the_commands"
+			add_ideas = ALO_centralised_command_0
+		}
+	}
+
+	focus = {
+		id = ALO_cavalry_focus
+		icon = GFX_goal_generic_cavalry
+		x = 2
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = ALO_unite_the_commands
+		}
+		prerequisite = {
+			focus = ALO_inspect_the_ottoman_inspectorate
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_cavalry_focus"
+			swap_ideas = {
+				remove_idea = ALO_alash_militias_2
+				add_idea = ALO_alash_militias_3
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_temporary_military_rule
+		icon = GFX_goal_ideology_paternal_autocrat
+		x = 1
+		y = 5
+		cost = 8
+		prerequisite = {
+			focus = ALO_unite_the_commands
+		}
+		available = {
+			OR = {
+				has_war_with = RUS
+				has_war_with = SOV
+			}
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_temporary_military_rule"
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = paternal_autocrat popularity = 0.2
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_conservative popularity = -0.1
+			}
+			hidden_effect = {
+				end_coalition = yes
+				clear_variable = coalition_stability
+			}
+			swap_ideas = {
+				remove_idea = ALO_centralised_command_0
+				add_idea = ALO_centralised_command_1
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_alash_means_kazakh
+		icon = GFX_focus_generic_oppression
+		x = 0
+		y = 6
+		cost = 6
+		prerequisite = {
+			focus = ALO_temporary_military_rule
+		}
+		prerequisite = {
+			focus = ALO_radical_land_reform
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_alash_means_kazakh"
+			add_war_support = 0.25
+			add_popularity = {
+				ideology = paternal_autocrat popularity = 0.2
+			}
+			swap_ideas = {
+				remove_idea = ALO_ethnic_tensions_auth_2
+				add_idea = ALO_ethnic_tensions_auth_3
+			}
+		}
+	}
+
+	focus = {
+		id = ALO_war_for_survival
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 2
+		y = 6
+		cost = 6
+		prerequisite = {
+			focus = ALO_temporary_military_rule
+		}
+		available = {
+			OR = {
+				has_war_with = RUS
+				has_war_with = SOV
+			}
+		}
+		relative_position_id = ALO_independence_at_last
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ALO_war_for_survival"
+			add_manpower = 2500
+			army_experience = 50
+			swap_ideas = {
+				remove_idea = ALO_centralised_command_1
+				add_idea = ALO_centralised_command_2
+			}
+		}
+	}
+}
+

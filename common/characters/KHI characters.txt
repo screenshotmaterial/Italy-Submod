@@ -1,0 +1,359 @@
+characters = {
+	KHI_balysh_ovezov = {
+		name = KHI_balysh_ovezov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KHI/Portrait_KHI_Balysh_Ovezov.png"
+			}
+		}
+		country_leader = {
+			ideology = syndicalist_subtype
+			traits = { KHI_student_activist }
+		}
+		country_leader = {
+			ideology = radical_socialist_subtype
+			traits = { KHI_student_activist }
+		}
+	}
+	KHI_junaid_khan = {
+		name = KHI_junaid_khan
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_junaid_khan.png"
+			}
+			civilian = {
+				large = "gfx/leaders/KHI/Portrait_KHI_Junaid_Khan.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KHI_junaid_khan
+			available = {
+				has_authoritarian_government = yes
+			}
+			traits = { KR_army_chief_manoeuvre_2 }
+			cost = 100
+		}
+		field_marshal = {
+			traits = { trait_reckless cavalry_leader trickster }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader = {
+			desc = KHI_junaid_khan_leader_desc
+			ideology = authoritarian_democrat_subtype
+			traits = { KHI_shrewd_strongman_1 }
+		}
+		country_leader = {
+			desc = KHI_junaid_khan_leader_desc
+			ideology = paternal_autocrat_subtype
+			traits = { KHI_shrewd_strongman_1 }
+		}
+		country_leader = {
+			desc = KHI_junaid_khan_leader_desc
+			ideology = national_populist_subtype
+			traits = { KHI_shrewd_strongman_1 }
+		}
+	}
+	KHI_eshi_khan = {
+		name = KHI_eshi_khan
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_eshi_khan.png"
+				large = "gfx/leaders/KHI/Portrait_KHI_Eshi_Khan.png"
+			}
+		}
+		advisor = {
+			slot = second_in_command
+			idea_token = KHI_eshi_khan
+			traits = { KR_political_protege_sic second_in_command_trait }
+			cost = 0
+			removal_cost = -1
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = KHI_eshi_khan_high_command
+			available = {
+				has_authoritarian_government = yes
+#				not_already_hired_except_as = high_command  #not isolating for central asian nations
+			}
+			traits = { KR_MHC_army_regrouping_1 }
+			cost = 50
+		}
+		corps_commander = {
+			traits = { cavalry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	KHI_oraz_geldy_kandzhik = {
+		name = KHI_oraz_geldy_kandzhik
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_oraz_geldy_kandzhik.png"
+				large = "gfx/leaders/KHI/Portrait_KHI_Oraz_Geldy_Kandzhik.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KHI_oraz_geldy_kandzhik
+			available = {
+				has_authoritarian_government = yes
+#				not_already_hired_except_as = political_advisor  #not isolating for central asian nations
+			}
+			traits = { KR_tribal_headman }
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = KHI_oraz_geldy_kandzhik_high_command
+			available = {
+				has_authoritarian_government = yes
+#				not_already_hired_except_as = high_command  #not isolating for central asian nations
+			}
+			traits = { KR_MHC_cavalry_1 }
+			cost = 50
+		}
+		corps_commander = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	KHI_azis_khan_chapykov = {
+		name = KHI_azis_khan_chapykov
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_azis_khan_chapykov.png"
+				large = "gfx/leaders/KHI/Portrait_KHI_Azis_Khan.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = KHI_azis_khan_chapykov_high_command
+			available = {
+				has_authoritarian_government = yes
+			}
+			traits = { KR_MHC_entrenchment_1 }
+			cost = 50
+		}
+		corps_commander = {
+			traits = { cavalry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+### SiCs
+
+	KHI_bekjon_rahmon = {
+		name = KHI_bekjon_rahmon
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_bekjon_rahmon.png"
+			}
+		}
+		advisor = {
+			slot = second_in_command
+			idea_token = KHI_bekjon_rahmon
+			traits = { KR_man_of_the_people_sic second_in_command_trait }
+			cost = 0
+			removal_cost = -1
+		}
+	}
+	KHI_kaikhaziz_atabayev = {
+		name = KHI_kaikhaziz_atabayev
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_kaikhaziz_atabayev.png"
+			}
+		}
+		advisor = {
+			slot = second_in_command
+			idea_token = KHI_kaikhaziz_atabayev
+			traits = { KR_pragmatic_statesman_sic second_in_command_trait }
+			cost = 0
+			removal_cost = -1
+		}
+	}
+
+### Political Advisors
+
+	KHI_said_abdullah_khan = {
+		name = KHI_said_abdullah_khan
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_said_abdullah_khan.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KHI_said_abdullah_khan
+			available = {
+				has_authoritarian_government = yes
+				has_completed_focus = KHI_one_khanate_two_khans
+			}
+			traits = { KR_puppet_khan }
+		}
+	}
+	KHI_bobookhun_salimov = {
+		name = KHI_bobookhun_salimov
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_bobookhun_salimov.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KHI_bobookhun_salimov
+			available = {
+				has_socialist_government = no
+			}
+			traits = { KR_islamic_modernist }
+		}
+	}
+	KHI_usman_yusupov = {
+		name = KHI_usman_yusupov
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_usman_yusupov.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KHI_usman_yusupov
+			available = {
+				has_authoritarian_government = no
+			}
+			traits = { KR_quartermaster_general }
+		}
+	}
+	KHI_yusupov_polvonniyoz_hoji = {
+		name = KHI_yusupov_polvonniyoz_hoji
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_yusupov_polvonniyoz_hoji.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KHI_yusupov_polvonniyoz_hoji
+			available = {
+				has_democratic_government = yes
+			}
+			traits = { KR_economic_reformer }
+		}
+	}
+	KHI_shadzha_batyrov = {
+		name = KHI_shadzha_batyrov
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_shadzha_batyrov.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KHI_shadzha_batyrov
+			available = {
+				has_socialist_government = yes
+			}
+			traits = { KR_naive_optimist }
+		}
+	}
+	KHI_berdi_myradowic_kerbabayew = {
+		name = KHI_berdi_myradowic_kerbabayew
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_berdi_myradowic_kerbabayew.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KHI_berdi_myradowic_kerbabayew
+			available = {
+				has_socialist_government = yes
+			}
+			traits = { KR_socialist_novelist }
+		}
+	}
+
+### Military Advisors
+
+	KHI_haji_sami = {
+		name = KHI_haji_sami
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_haji_sami.png"
+			}
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = KHI_haji_sami
+			available = {
+				has_authoritarian_government = yes
+				has_completed_focus = KHI_attract_adventurers_and_exiles
+			}
+			traits = { KR_ottoman_exile }
+			cost = 100
+		}
+	}
+	KHI_tachmamed_niyazmamedov = {
+		name = KHI_tachmamed_niyazmamedov
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_tachmamed_niyazmamedov.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KHI_tachmamed_niyazmamedov_army_chief
+			traits = { KR_army_chief_drill_1 }
+			cost = 50
+		}
+	}
+	KHI_kasym_beshimov = {
+		name = KHI_kasym_beshimov
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_kasym_beshimov.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = KHI_kasym_beshimov_high_command
+			traits = { KR_MHC_concealment_1 }
+			cost = 50
+		}
+	}
+	KHI_tashtemir_rustemov = {
+		name = KHI_tashtemir_rustemov
+		portraits = {
+			army = {
+				small = "gfx/interface/advisors/KHI/KHI_tashtemir_rustemov.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			idea_token = KHI_tashtemir_rustemov_high_command
+			traits = { KR_MHC_army_logistics_1 }
+			cost = 50
+		}
+	}
+}
