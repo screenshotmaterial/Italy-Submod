@@ -38,7 +38,7 @@ RUS = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = social_conservative
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
@@ -57,13 +57,6 @@ set_popularities = {
 	national_populist = 7
 }
 
-add_ideas = {
-	ALO_land_of_wanderers
-	ALO_ethnic_tensions_0
-	ALO_failed_education_reform
-	ALO_alash_militias_0
-}
-
 recruit_character = ALO_alikhan_bukeikhanov
 recruit_character = ALO_zhumabay_shayakhmetov
 recruit_character = ALO_saken_seifullin
@@ -77,12 +70,3 @@ recruit_character = ALO_mukhamedzhan_tynyshpaev
 recruit_character = ALO_smagul_sadwakasov
 recruit_character = ALO_sultanbek_khojanov
 recruit_character = ALO_zhumabay_shayakhmetuly
-
-recruit_character = ALO_army_council
-recruit_character = ALO_pavel_dutov
-recruit_character = ALO_akhmet_baitursynov
-recruit_character = ALO_mirjaqip_dulatuli
-recruit_character = ALO_zhansha_dosmukhamedov
-recruit_character = ALO_validkhan_sherafeddinovich
-recruit_character = ALO_khalel_dosmukhameduly
-

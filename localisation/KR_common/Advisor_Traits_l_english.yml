@@ -194,11 +194,6 @@
  BRA_royal_legitimist_sic: "Royal Legitimist"
  KR_regional_traditionalist_leader: "Regional Traditionalist Leader"
 
-### BUK ###
- KR_islamic_modernist: "Islamic Modernist"
- KR_ottoman_attache: "Ottoman Attache"
- KR_ottoman_exile: "Ottoman Exile"
-
 ### CAN ###
  KR_premier_of_quebec: "Premier of Quebec"
  KR_minister_of_everything: "Minister of Everything"
@@ -213,6 +208,9 @@
 ### ENG ###
  KR_the_minister_sic: "The Minister"
  KR_red_ellen_sic: "Red Ellen"
+
+### ETH ### 
+ KR_tribal_headman: "Tribal Headman"
 
 ### FRA ###
  KR_modern_dombrowvski: ""Modern Day Dombrowski""
@@ -263,10 +261,6 @@
  KR_reformist_socialist_sic: "Reformist Socialist"
  KR_long_war_advocate: "Centralist"
  KR_short_war_advocate: "Restorationist"
-
-### KHI ###
- KR_puppet_khan: "Puppet Khan"
- KR_tribal_headman: "Tribal Headman"
 
  ### KUM ###
  KUM_royal_advisory_sic: "Royal Advisory"

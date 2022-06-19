@@ -382,7 +382,7 @@ focus_tree = {
 
 ### Legionary Italy ###
 	focus = {# The ANI in Power
-		id = ITA_march_on_milan
+		id = ITA_ani_elected
 		icon = GFX_goal_ideology_national_populist
 		cost = 7
 		available = { has_government = national_populist }
@@ -390,7 +390,7 @@ focus_tree = {
 		x = 9
 		y = 0
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus ITA_march_on_milan"
+			log = "[GetDateText]: [Root.GetName]: Focus ITA_ani_elected"
 			custom_effect_tooltip = ITA_the_ani_seized_power
 		}
 	}
@@ -400,11 +400,11 @@ focus_tree = {
 		cost = 7
 		available = { has_government = national_populist }
 		prerequisite = {
-			focus = ITA_march_on_milan
+			focus = ITA_ani_elected
 		}
 		x = -2
 		y = 1
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_purge_red_meance"
@@ -422,11 +422,11 @@ focus_tree = {
 		cost = 7
 		available = { has_government = national_populist }
 		prerequisite = {
-			focus = ITA_march_on_milan
+			focus = ITA_ani_elected
 		}
 		x = 0
 		y = 1
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_italian_militerism"
@@ -444,11 +444,11 @@ focus_tree = {
 		cost = 7
 		available = { has_government = national_populist }
 		prerequisite = {
-			focus = ITA_march_on_milan
+			focus = ITA_ani_elected
 		}
 		x = 2
 		y = 1
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_four_economic_battles"
@@ -474,7 +474,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = {
 			factor = 100
 		}
@@ -531,7 +531,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 3
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 33 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_corporate_alliance"
@@ -549,7 +549,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 33 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_purge_opposition"
@@ -569,7 +569,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 33 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_centralized_power"
@@ -593,7 +593,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 4
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 33 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_corporate_militarism"
@@ -638,7 +638,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 33 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_military_loyalty"
@@ -660,7 +660,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_military_loyalty }
 		x = 2
 		y = 4
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = {
 			factor = 33
 			modifier = {
@@ -696,7 +696,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 5
-		relative_position_id = ITA_march_on_milan
+		relative_position_id = ITA_ani_elected
 		ai_will_do = { factor = 33 }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_italy_is_reborn"

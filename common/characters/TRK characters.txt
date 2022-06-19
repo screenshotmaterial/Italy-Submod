@@ -8,15 +8,12 @@ characters = {
 		}
 		country_leader = {
 			ideology = syndicalist_subtype
-			traits = { TRK_pan_turkic_revolutionary }
 		}
 		country_leader = {
 			ideology = radical_socialist_subtype
-			traits = { TRK_pan_turkic_revolutionary }
 		}
 		country_leader = {
 			ideology = social_democrat_subtype
-			traits = { TRK_pan_turkic_revolutionary }
 		}
 	}
 	TRK_mustafa_shokay = {
@@ -28,15 +25,12 @@ characters = {
 		}
 		country_leader = {
 			ideology = social_liberal_subtype
-			traits = { TRK_unbiased_moderate }
 		}
 		country_leader = {
 			ideology = market_liberal_subtype
-			traits = { TRK_unbiased_moderate }
 		}
 		country_leader = {
 			ideology = social_conservative_subtype
-			traits = { TRK_unbiased_moderate }
 		}
 	}
 	TRK_madamin_bek = {
@@ -49,15 +43,6 @@ characters = {
 				large = "gfx/leaders/TRK/Portrait_TRK_Madamin_Bek.png"
 			}
 		}
-		advisor = {
-			slot = army_chief
-			idea_token = TRK_madamin_bek
-			available = {
-				has_authoritarian_government = yes
-			}
-			traits = { KR_army_chief_organisational_1 }
-			cost = 50
-		}
 		field_marshal = {
 			traits = { organizer inspirational_leader }
 			skill = 2
@@ -67,14 +52,10 @@ characters = {
 			logistics_skill = 1
 		}
 		country_leader = {
-			desc = TRK_madamin_bek_leader_desc
 			ideology = authoritarian_democrat_subtype
-			traits = { TRK_pragmatic_mediator }
 		}
 		country_leader = {
-			desc = TRK_madamin_bek_leader_desc
 			ideology = paternal_autocrat_subtype
-			traits = { TRK_pragmatic_mediator }
 		}
 	}
 	TRK_kurshirmat = {
@@ -84,26 +65,6 @@ characters = {
 				small = "gfx/interface/advisors/TRK/TRK_kurshirmat.png"
 				large = "gfx/leaders/TRK/Portrait_TRK_Kurshirmat.png"
 			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRK_kurshirmat
-			available = {
-				has_authoritarian_government = yes
-#				not_already_hired_except_as = political_advisor  #not isolating for central asian nations
-			}
-			traits = { KR_adventurous_daredevil }
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = TRK_kurshirmat_high_command
-			available = {
-				has_authoritarian_government = yes
-#				not_already_hired_except_as = high_command  #not isolating for central asian nations
-			}
-			traits = { KR_MHC_cavalry_2 }
-			cost = 100
 		}
 		corps_commander = {
 			traits = { cavalry_leader commando }
@@ -122,16 +83,6 @@ characters = {
 				large = "gfx/leaders/TRK/Portrait_TRK_Muetdin_Bek.png"
 			}
 		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = TRK_muetdin_bek_high_command
-			available = {
-				has_authoritarian_government = yes
-			}
-			traits = { KR_MHC_infantry_1 }
-			cost = 50
-		}
 		corps_commander = {
 			traits = { trait_reckless trickster skirmisher }
 			skill = 2
@@ -149,216 +100,12 @@ characters = {
 				large = "gfx/leaders/TRK/Portrait_TRK_Katta_Ergash.png"
 			}
 		}
-		advisor = {
-			slot = second_in_command
-			idea_token = TRK_katta_ergash
-			traits = { KR_local_tyrant_sic second_in_command_trait }
-			cost = 0
-			removal_cost = -1
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = TRK_katta_ergash_high_command
-			available = {
-				has_authoritarian_government = yes
-#				not_already_hired_except_as = high_command  #not isolating for central asian nations
-			}
-			traits = { KR_MHC_army_regrouping_1 }
-			cost = 50
-		}
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-		}
-	}
-
-### SiCs
-
-	TRK_munawwar_qari_abdurrashidkhan = {
-		name = TRK_munawwar_qari_abdurrashidkhan
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_munawwar_qari_abdurrashidkhan.png"
-			}
-		}
-		advisor = {
-			slot = second_in_command
-			idea_token = TRK_munawwar_qari_abdurrashidkhan
-			traits = { KR_great_compromiser_sic second_in_command_trait }
-			cost = 0
-			removal_cost = -1
-		}
-	}
-	TRK_arif_alimov = {
-		name = TRK_arif_alimov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_arif_alimov.png"
-			}
-		}
-		advisor = {
-			slot = second_in_command
-			idea_token = TRK_arif_alimov
-			traits = { KR_silent_workhorse_sic second_in_command_trait }
-			cost = 0
-			removal_cost = -1
-		}
-	}
-
-### Political Advisors
-
-	TRK_konstantin_monstrov = {
-		name = TRK_konstantin_monstrov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_konstantin_monstrov.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRK_konstantin_monstrov
-			available = {
-				has_authoritarian_government = yes
-				has_completed_focus = TRK_settling_the_settler_conflict
-			}
-			traits = { KR_old_general }
-		}
-	}
-	TRK_khal_khodzha = {
-		name = TRK_khal_khodzha
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_khal_khodzha.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRK_khal_khodzha
-			available = {
-				has_authoritarian_government = yes
-			}
-			traits = { KR_tribal_headman }
-		}
-	}
-	TRK_abdulla_qodiriy = {
-		name = TRK_abdulla_qodiriy
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_abdulla_qodiriy.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRK_abdulla_qodiriy
-			available = {
-				OR = {
-					has_authoritarian_government = no
-					has_completed_focus = TRK_enlist_the_jadid
-				}
-			}
-			traits = { KR_socialist_novelist }
-		}
-	}
-	TRK_nazir_tyuryakulov = {
-		name = TRK_nazir_tyuryakulov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_nazir_tyuryakulov.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRK_nazir_tyuryakulov
-			available = {
-				has_authoritarian_government = no
-			}
-			traits = { KR_mixed_economy_proponent }
-		}
-	}
-	TRK_torekul_aitmatov = {
-		name = TRK_torekul_aitmatov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_torekul_aitmatov.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = TRK_torekul_aitmatov
-			available = {
-				has_socialist_government = yes
-			}
-			traits = { KR_young_guard }
-		}
-	}
-
-### Military Advisors
-
-	TRK_akif_pasha = {
-		name = TRK_akif_pasha
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_akif_pasha.png"
-			}
-		}
-		advisor = {
-			slot = theorist
-			ledger = army
-			idea_token = TRK_akif_pasha
-			available = {
-				has_authoritarian_government = yes
-				has_completed_focus = TRK_our_ottoman_brothers
-			}
-			traits = { KR_ottoman_attache }
-			cost = 100
-		}
-	}
-	TRK_musa_jalil = {
-		name = TRK_musa_jalil
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_musa_jalil.png"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = TRK_musa_jalil_army_chief
-			traits = { KR_army_chief_drill_1 }
-			cost = 50
-		}
-	}
-	TRK_ismailbek_taranchiev = {
-		name = TRK_ismailbek_taranchiev
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_ismailbek_taranchiev.png"
-			}
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = TRK_ismailbek_taranchiev_high_command
-			traits = { KR_MHC_concealment_1 }
-			cost = 50
-		}
-	}
-	TRK_akhmedzhan_shukurov = {
-		name = TRK_akhmedzhan_shukurov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/TRK/TRK_akhmedzhan_shukurov.png"
-			}
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = TRK_akhmedzhan_shukurov_high_command
-			traits = { KR_MHC_artillery_1 }
-			cost = 50
 		}
 	}
 }

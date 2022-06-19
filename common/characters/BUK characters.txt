@@ -2,65 +2,35 @@ characters = {
 	BUK_fayzullah_khodjaev = {
 		name = BUK_fayzullah_khodjaev
 		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_fayzullah_khodjaev.png"
-			}
 			civilian = {
 				large = "gfx/leaders/BUK/Portrait_BUK_Fayzullah_Khodjaev.png"
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_fayzullah_khodjaev
-			available = {
-				has_authoritarian_government = no
-				NOT = { has_country_leader = { character = BUK_fayzullah_khodjaev } }
-			}
-			traits = { KR_naive_optimist }
-		}
 		country_leader = {
 			ideology = syndicalist_subtype
-			traits = { BUK_aloof_ideologue }
 		}
 		country_leader = {
 			ideology = radical_socialist_subtype
-			traits = { BUK_aloof_ideologue }
 		}
 		country_leader = {
 			ideology = social_democrat_subtype
-			traits = { BUK_aloof_ideologue }
 		}
 	}
 	BUK_sadriddin_ayni = {
 		name = BUK_sadriddin_ayni
 		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_sadriddin_ayni.png"
-			}
 			civilian = {
 				large = "gfx/leaders/BUK/Portrait_BUK_Sadriddin_Ayni.png"
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_sadriddin_ayni
-			available = {
-				has_authoritarian_government = no
-				NOT = { has_country_leader = { character = BUK_sadriddin_ayni } }
-			}
-			traits = { KR_influential_intellectual }
-		}
 		country_leader = {
 			ideology = social_liberal_subtype
-			traits = { BUK_the_peoples_poet }
 		}
 		country_leader = {
 			ideology = market_liberal_subtype
-			traits = { BUK_the_peoples_poet }
 		}
 		country_leader = {
 			ideology = social_conservative_subtype
-			traits = { BUK_the_peoples_poet }
 		}
 	}
 	BUK_mohammed_alim_khan = {
@@ -73,15 +43,6 @@ characters = {
 				large = "gfx/leaders/BUK/Portrait_BUK_Mohammed_Alim.png"
 			}
 		}
-		advisor = {
-			slot = army_chief
-			idea_token = BUK_mohammed_alim_khan
-			available = {
-				has_authoritarian_government = yes
-			}
-			traits = { KR_army_chief_defensive_1 }
-			cost = 50
-		}
 		field_marshal = {
 			traits = { old_guard cavalry_officer }
 			skill = 2
@@ -91,14 +52,10 @@ characters = {
 			logistics_skill = 2
 		}
 		country_leader = {
-			desc = BUK_mohammed_alim_khan_leader_desc
 			ideology = authoritarian_democrat_subtype
-			traits = { BUK_tenacious_autocrat }
 		}
 		country_leader = {
-			desc = BUK_mohammed_alim_khan_leader_desc
 			ideology = paternal_autocrat_subtype
-			traits = { BUK_tenacious_autocrat }
 		}
 	}
 	BUK_ibrahim_bek = {
@@ -108,24 +65,6 @@ characters = {
 				small = "gfx/interface/advisors/BUK/BUK_ibrahim_bek.png"
 				large = "gfx/leaders/BUK/Portrait_BUK_Ibrahim_Bek.png"
 			}
-		}
-		advisor = {
-			slot = second_in_command
-			idea_token = BUK_ibrahim_bek
-			traits = { KR_respected_war_hero_sic second_in_command_trait }
-			cost = 0
-			removal_cost = -1
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = BUK_ibrahim_bek_high_command
-			available = {
-				has_authoritarian_government = yes
-#				not_already_hired_except_as = high_command  #not isolating for central asian nations
-			}
-			traits = { KR_MHC_cavalry_2 }
-			cost = 100
 		}
 		corps_commander = {
 			traits = { organizer trickster guerilla_fighter }
@@ -144,16 +83,6 @@ characters = {
 				large = "gfx/leaders/BUK/Portrait_BUK_Mulla_Abdul_Qahor.png"
 			}
 		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = BUK_mulla_abdul_qahhor_high_command
-			available = {
-				has_authoritarian_government = yes
-			}
-			traits = { KR_MHC_commando_1 }
-			cost = 50
-		}
 		corps_commander = {
 			traits = { trickster guerilla_fighter }
 			skill = 2
@@ -171,221 +100,12 @@ characters = {
 				large = "gfx/leaders/BUK/Portrait_BUK_Shahmurad_Khan.png"
 			}
 		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = BUK_shahmurad_khan_high_command
-			traits = { KR_MHC_army_logistics_1 }
-			cost = 50
-		}
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-		}
-	}
-
-### SiCs
-
-	BUK_mahmudkhodja_behbudiy = {
-		name = BUK_mahmudkhodja_behbudiy
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_mahmudkhodja_behbudiy.png"
-			}
-		}
-		advisor = {
-			slot = second_in_command
-			idea_token = BUK_mahmudkhodja_behbudiy
-			traits = { KR_brilliant_lawyer_sic second_in_command_trait }
-			cost = 0
-			removal_cost = -1
-		}
-	}
-	BUK_yuldash_akhunbabaev = {
-		name = BUK_yuldash_akhunbabaev
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_yuldash_akhunbabaev.png"
-			}
-		}
-		advisor = {
-			slot = second_in_command
-			idea_token = BUK_yuldash_akhunbabaev
-			traits = { KR_political_specialist_sic second_in_command_trait }
-			cost = 0
-			removal_cost = -1
-		}
-	}
-
-### Political Advisors
-
-	BUK_kayumz_mirza = {
-		name = BUK_kayumz_mirza
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_kayumz_mirza.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_kayumz_mirza
-			available = {
-				has_authoritarian_government = yes
-			}
-			traits = { KR_general_staffer }
-		}
-	}
-	BUK_nizamaddin_urganji = {
-		name = BUK_nizamaddin_urganji
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_nizamaddin_urganji.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_nizamaddin_urganji
-			available = {
-				has_authoritarian_government = yes
-			}
-			traits = { KR_traditionalist_economist }
-		}
-	}
-	BUK_ishan_khan = {
-		name = BUK_ishan_khan
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_ishan_khan.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_ishan_khan
-			available = {
-				has_authoritarian_government = yes
-				has_completed_focus = BUK_purge_reformers
-			}
-			traits = { KR_iron_fisted_brute }
-		}
-	}
-	BUK_usman_khojaev = {
-		name = BUK_usman_khojaev
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_usman_khojaev.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_usman_khojaev
-			available = {
-				has_authoritarian_government = no
-			}
-			traits = { KR_social_revolutionary }
-		}
-	}
-	BUK_abdurauf_fitrat = {
-		name = BUK_abdurauf_fitrat
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_abdurauf_fitrat.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_abdurauf_fitrat
-			available = {
-				has_democratic_government = yes
-			}
-			traits = { KR_islamic_modernist }
-		}
-	}
-	BUK_akmal_ikramov = {
-		name = BUK_akmal_ikramov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_akmal_ikramov.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BUK_akmal_ikramov
-			allowed = {
-				has_dlc = "La Resistance"
-			}
-			available = {
-				has_intelligence_agency = yes
-			}
-			traits = { KR_head_of_intelligence }
-		}
-	}
-
-### Military Advisors
-
-	BUK_munip_pasha = {
-		name = BUK_munip_pasha
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_munip_pasha.png"
-			}
-		}
-		advisor = {
-			slot = theorist
-			ledger = army
-			idea_token = BUK_munip_pasha
-			available = {
-				has_authoritarian_government = yes
-				has_completed_focus = BUK_recall_mission_to_kostantiniyye
-			}
-			traits = { KR_ottoman_attache }
-			cost = 100
-		}
-	}
-	BUK_sobir_rakhimov = {
-		name = BUK_sobir_rakhimov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_sobir_rakhimov.png"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = BUK_sobir_rakhimov_army_chief
-			traits = { KR_army_chief_drill_1 }
-			cost = 50
-		}
-	}
-	BUK_tajiali_babaev = {
-		name = BUK_tajiali_babaev
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_tajiali_babaev.png"
-			}
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = BUK_tajiali_babaev_high_command
-			traits = { KR_MHC_concealment_1 }
-			cost = 50
-		}
-	}
-	BUK_abdusalim_dekhkanbaev = {
-		name = BUK_abdusalim_dekhkanbaev
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/BUK/BUK_abdusalim_dekhkanbaev.png"
-			}
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			idea_token = BUK_abdusalim_dekhkanbaev_high_command
-			traits = { KR_MHC_army_regrouping_1 }
-			cost = 50
 		}
 	}
 }

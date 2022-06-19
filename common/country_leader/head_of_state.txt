@@ -855,58 +855,6 @@ leader_traits = {
 		army_morale_factor = 0.1
 	}
 
-	### Central Asia
-
-	BUK_tenacious_autocrat = { #Alim Khan
-		random = no
-		political_power_factor = 0.1
-		party_popularity_stability_factor = 0.3
-		stability_factor = -0.1
-	}
-	BUK_the_peoples_poet = { #Sadriddin Ayni
-		random = no
-		political_power_factor = 0.03
-		stability_factor = 0.03
-		research_speed_factor = 0.03
-	}
-	BUK_aloof_ideologue = { #Fayzullah Khodjaev
-		random = no
-		stability_factor = -0.1
-		radical_socialist_drift = 0.03
-		syndicalist_drift = 0.03
-	}
-	KHI_shrewd_strongman_1 = { #Junaid Khan
-		random = no
-		army_chief_cost_factor = -0.25
-		high_command_cost_factor = -0.25
-	}
-	KHI_shrewd_strongman_2 = { #Junaid Khan after Focus
-		random = no
-		army_chief_cost_factor = -0.25
-		high_command_cost_factor = -0.25
-		command_power_gain = 0.25
-	}
-	KHI_student_activist = { #Balysh Ovezov
-		random = no
-		political_power_factor = 0.05
-		army_morale_factor = 0.05
-	}
-	TRK_pragmatic_mediator = { #Madamin Bek
-		random = no
-		political_power_factor = 0.15
-		political_advisor_cost_factor = -0.25
-	}
-	TRK_unbiased_moderate = { #Mustafa Shokay
-		random = no
-		political_power_factor = 0.05
-		stability_factor = 0.1
-	}
-	TRK_pan_turkic_revolutionary = { #Turar Ryskulov
-		random = no
-		political_power_factor = 0.1
-		war_support_factor = 0.1
-	}
-
 	### Tibet
 
 	TIB_great_fuyama = { #Nicholas Roerich
@@ -959,26 +907,5 @@ leader_traits = {
 		random = no
 		production_speed_buildings_factor = 0.1
 		party_popularity_stability_factor = 0.5
-	}
-
-	### Alash
-
-	ALO_father_of_the_militias = {
-		random = no
-		mobilization_speed = 0.15
-		no_supply_grace = 30
-	}
-	ALO_idealistic_poet = {
-		random = no
-		political_power_factor = 0.05
-		war_support_factor = 0.05
-	}
-	ALO_weary_peacemaker = {
-		random = no
-		stability_factor = 0.1
-	}
-	ALO_charismatic_protege = {
-		random = no
-		political_power_factor = 0.1
 	}
 }

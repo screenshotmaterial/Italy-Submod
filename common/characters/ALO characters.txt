@@ -19,15 +19,12 @@ characters = {
 		}
 		country_leader = {
 			ideology = syndicalist_subtype
-			traits = { ALO_idealistic_poet }
 		}
 		country_leader = {
 			ideology = radical_socialist_subtype
-			traits = { ALO_idealistic_poet }
 		}
 		country_leader = {
 			ideology = social_democrat_subtype
-			traits = { ALO_idealistic_poet }
 		}
 	}
 	ALO_alimkhan_yermekov = {
@@ -39,15 +36,12 @@ characters = {
 		}
 		country_leader = {
 			ideology = social_liberal_subtype
-			traits = { ALO_charismatic_protege }
 		}
 		country_leader = {
 			ideology = market_liberal_subtype
-			traits = { ALO_charismatic_protege }
 		}
 		country_leader = {
 			ideology = social_conservative_subtype
-			traits = { ALO_charismatic_protege }
 		}
 	}
 	ALO_alikhan_bukeikhanov = {
@@ -59,13 +53,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = social_conservative_subtype
-			desc = ALO_alikhan_bukeikhanov_leader_desc
-			traits = { ALO_weary_peacemaker }
 		}
 		country_leader = {
 			ideology = authoritarian_democrat_subtype
-			desc = ALO_alikhan_bukeikhanov_leader_desc
-			traits = { ALO_weary_peacemaker }
 		}
 	}
 	ALO_amanzholov_sadyk_ayukevich = {
@@ -79,24 +69,6 @@ characters = {
 				large = "gfx/leaders/ALO/Portrait_ALO_Amanzholov_Sadyk_Ayukevich.png"
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALO_amanzholov_sadyk_ayukevich_advisor
-			available = {
-				not_already_hired_except_as = political_advisor
-			}
-			traits = { KR_crime_fighter }
-		}
-		advisor = {
-			slot = theorist
-			ledger = army
-			idea_token = ALO_amanzholov_sadyk_ayukevich_theorist
-			available = {
-				not_already_hired_except_as = theorist
-			}
-			traits = { KR_military_theorist }
-			cost = 100
-		}
 		field_marshal = {
 			traits = { trait_reckless organizer }
 			skill = 2
@@ -107,11 +79,9 @@ characters = {
 		}
 		country_leader = {
 			ideology = authoritarian_democrat_subtype
-			traits = { ALO_father_of_the_militias }
 		}
 		country_leader = {
 			ideology = paternal_autocrat_subtype
-			traits = { ALO_father_of_the_militias }
 		}
 	}
 	ALO_bauyrzhan_momyshuly = {
@@ -121,13 +91,6 @@ characters = {
 				small = "gfx/interface/advisors/ALO/ALO_bauyrzhan_momyshuly.png"
 				large = "gfx/leaders/ALO/Portrait_ALO_Bauyrzhan_Momyshuly.png"
 			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = ALO_bauyrzhan_momyshuly
-			ledger = army
-			traits = { KR_MHC_army_regrouping_1 }
-			cost = 50
 		}
 		corps_commander = {
 			skill = 1
@@ -145,23 +108,6 @@ characters = {
 				large = "gfx/leaders/ALO/Portrait_ALO_Bazarbay_Mamentov.png"
 			}
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALO_bazarbay_mamentov_advisor
-			available = {
-				not_already_hired_except_as = political_advisor
-			}
-			traits = { KR_man_of_the_people }
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = ALO_bazarbay_mamentov_army_chief
-			available = {
-				not_already_hired_except_as = army_chief
-			}
-			traits = { KR_army_chief_defensive_1 }
-			cost = 50
-		}
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
@@ -177,12 +123,6 @@ characters = {
 				small = "gfx/interface/advisors/ALO/ALO_mukhamedzhan_tynyshpaev.png"
 				large = "gfx/leaders/ALO/Portrait_ALO_Mukhamedzhan_Tynyshpaev.png"
 			}
-		}
-		advisor = {
-			slot = air_chief
-			idea_token = ALO_mukhamedzhan_tynyshpaev
-			traits = { KR_air_chief_safety_1 }
-			cost = 50
 		}
 		corps_commander = {
 			traits = { trait_engineer }
@@ -201,13 +141,6 @@ characters = {
 				large = "gfx/leaders/ALO/Portrait_ALO_Smagul_Sadwakasov.png"
 			}
 		}
-		advisor = {
-			slot = high_command
-			idea_token = ALO_smagul_sadwakasov
-			ledger = army
-			traits = { KR_MHC_artillery_1 }
-			cost = 50
-		}
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
@@ -223,13 +156,6 @@ characters = {
 				small = "gfx/interface/advisors/ALO/ALO_sultanbek_khojanov.png"
 				large = "gfx/leaders/ALO/Portrait_ALO_Sultanbek_Khojanuly_Khojanov.png"
 			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = ALO_sultanbek_khojanov
-			ledger = army
-			traits = { KR_MHC_entrenchment_1 }
-			cost = 50
 		}
 		corps_commander = {
 			skill = 1
@@ -247,12 +173,6 @@ characters = {
 				large = "gfx/leaders/ALO/Portrait_ALO_Zhumabay_Shayakhmetov.png"
 			}
 		}
-		advisor = {
-			slot = army_chief
-			idea_token = ALO_zhumabay_shayakhmetuly
-			traits = { KR_army_chief_planning_1 }
-			cost = 50
-		}
 		corps_commander = {
 			traits = { organizer }
 			skill = 2
@@ -260,102 +180,6 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
-		}
-	}
-
-	ALO_army_council = {
-		name = ALO_army_council
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/ALO/ALO_army_council.png"
-			}
-		}
-		advisor = {
-			slot = theorist
-			idea_token = ALO_army_council
-			ledger = military
-			traits = { KR_council_of_theorists }
-			cost = 100
-		}
-	}
-	ALO_pavel_dutov = {
-		name = ALO_pavel_dutov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/ALO/ALO_pavel_dutov.png"
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = ALO_pavel_dutov
-			ledger = army
-			traits = { KR_MHC_cavalry_1 }
-			cost = 50
-		}
-	}
-	ALO_akhmet_baitursynov = {
-		name = ALO_akhmet_baitursynov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/ALO/ALO_akhmet_baitursynov.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALO_akhmet_baitursynov
-			traits = { KR_education_reformer }
-		}
-	}
-	ALO_mirjaqip_dulatuli = {
-		name = ALO_mirjaqip_dulatuli
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/ALO/ALO_mirjaqip_dulatuli.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALO_mirjaqip_dulatuli
-			traits = { KR_influential_intellectual }
-		}
-	}
-	ALO_zhansha_dosmukhamedov = {
-		name = ALO_zhansha_dosmukhamedov
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/ALO/ALO_zhansha_dosmukhamedov.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALO_zhansha_dosmukhamedov
-			traits = { KR_brilliant_lawyer }
-		}
-	}
-	ALO_validkhan_sherafeddinovich = {
-		name = ALO_validkhan_sherafeddinovich
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/ALO/ALO_validkhan_sherafeddinovich.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALO_validkhan_sherafeddinovich
-			traits = { KR_silent_workhorse }
-		}
-	}
-	ALO_khalel_dosmukhameduly = {
-		name = ALO_khalel_dosmukhameduly
-		portraits = {
-			army = {
-				small = "gfx/interface/advisors/ALO/ALO_khalel_dosmukhameduly.png"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ALO_khalel_dosmukhameduly
-			traits = { KR_public_health_advocate }
 		}
 	}
 }

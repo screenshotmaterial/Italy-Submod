@@ -30,34 +30,10 @@ set_popularities = {
 	national_populist = 6
 }
 
-country_event = { id = centralasia.201 days = 1 } #Intro event
-
-add_ideas = {
-	central_asia_underdeveloped_industry_1
-	central_asia_guerilla_army_1
-	KHI_bandit_kingdom_0
-}
-
 recruit_character = KHI_balysh_ovezov
 recruit_character = KHI_junaid_khan
-recruit_character = KHI_said_abdullah_khan
-recruit_character = KHI_bobookhun_salimov
-recruit_character = KHI_usman_yusupov
-recruit_character = KHI_yusupov_polvonniyoz_hoji
-recruit_character = KHI_shadzha_batyrov
-recruit_character = KHI_berdi_myradowic_kerbabayew
-
-recruit_character = KHI_bekjon_rahmon
-recruit_character = KHI_kaikhaziz_atabayev
-
-recruit_character = KHI_haji_sami
-recruit_character = KHI_tachmamed_niyazmamedov
-recruit_character = KHI_kasym_beshimov
-recruit_character = KHI_tashtemir_rustemov
 
 ### Corps Commanders ###
 recruit_character = KHI_eshi_khan
 recruit_character = KHI_oraz_geldy_kandzhik
 recruit_character = KHI_azis_khan_chapykov
-
-activate_advisor = KHI_eshi_khan
