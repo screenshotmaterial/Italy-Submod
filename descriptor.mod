@@ -61,6 +61,6 @@ tags={
 	"Gameplay"
 }
 picture="KR.jpg"
-version="0.21"
+version="0.21.2"
 supported_version="1.11.*"
 path="C:/Users/redsr/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/Italy-Submod"

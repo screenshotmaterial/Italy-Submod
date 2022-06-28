@@ -1063,6 +1063,7 @@ leader_traits = {
 		equipment_bonus = {
 			infantry_equipment = {
 				build_cost_ic = -0.1
+				instant = yes
 			}
 		}
 		custom_modifier_tooltip = cannot_replace_character
@@ -1188,6 +1189,7 @@ leader_traits = {
 		equipment_bonus = {
 			infantry_equipment = {
 				build_cost_ic = -0.1
+				instant = yes
 			}
 		}
 
@@ -1202,6 +1204,7 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				build_cost_ic = -0.1
+				instant = yes
 			}
 		}
 
@@ -2552,6 +2555,16 @@ leader_traits = {
 		political_power_factor = 0.05
 	}
 
+	### ETH ###
+	KR_tribal_headman = {
+		random = no
+		sprite = 17
+		conscription_factor = 0.05
+		army_core_defence_factor = 0.05
+		supply_consumption_factor = -0.05
+		experience_gain_army_factor = -0.05
+	}
+
 	### TIB ###
 	KR_foreign_buddhist = {
 		random = no
@@ -2826,15 +2839,5 @@ leader_traits = {
 		consumer_goods_factor = -0.02
 		stability_factor = 0.05
 		conscription = 0.005
-	}
-	
-	### ETH ### 
-	KR_tribal_headman = {
-		random = no
-		sprite = 17
-		conscription_factor = 0.05
-		army_core_defence_factor = 0.05
-		supply_consumption_factor = -0.05
-		experience_gain_army_factor = -0.05
 	}
 }
