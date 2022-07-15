@@ -83,7 +83,6 @@ areas = {
 			125 #Southeast Brazil
 			202 #Northeast Brazil
 			203 #Uruguay Basin
-
 		}
 	}
 	inner_south_america = {
